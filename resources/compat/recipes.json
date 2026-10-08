@@ -1,0 +1,25 @@
+[
+  {
+    "id": "wraith-night",
+    "path": "dota/addons/frostivus/scripts/vscripts/addon_init.lua",
+    "originalSha": "10ca5c53ff2b39c1cb61f7eff5b36e33b907586c9ef9b9033498df8d34102853",
+    "patchedSha": "d013d554913ebc2634ec5786de5153bd244d9ee3aee74cf051332dae6787e093",
+    "offset": 1024,
+    "old": "",
+    "replacement": "DQotLSBMb2NhbCBsZWdhY3kgQVBJIGFkYXB0ZXI7IG9yaWdpbmFsIGFjdGl2aXR5IGxvZ2ljIHJlbWFpbnMgYWJvdmUuDQpyZXF1aXJlKCAiaGlzdG9yeV9sZWdhY3lfc3Bhd25fY29tcGF0IiApDQo=",
+    "adapter": {
+      "resource": "history_legacy_spawn_compat.lua",
+      "path": "dota/addons/frostivus/scripts/vscripts/history_legacy_spawn_compat.lua",
+      "sha": "fc21fbe87dbe8aaece85f5d562fdbd162a960f7484c169294e11c6ed9655e482"
+    }
+  },
+  {
+    "id": "darkmoon",
+    "path": "game/dota_addons/new_bloom_2017/scripts/vscripts/holdout_game_ui.lua",
+    "originalSha": "bd395a5e3f97890fc30950cd77c9cadaa7d3f4a70c551e602bade6b78d5c4f3f",
+    "patchedSha": "4adcd96e27d817e0a9883b2fa239d479c820edec9691f0d6d60972e5884cfe50",
+    "offset": 6001,
+    "old": "VXBkYXRlRXZlbnRQb2ludHMoIHNlbGYuX3BsYXllclBvaW50c0RhdGEgKQ==",
+    "replacement": "LS0gTG9jYWwgaGlzdG9yeTogdGhlIHJldGlyZWQgZXZlbnQtcG9pbnRzIEFQSSBtYXkgbm90IGV4aXN0IGluIHRoaXMgZW5naW5lLg0KCWlmIHR5cGUoIFVwZGF0ZUV2ZW50UG9pbnRzICkgPT0gImZ1bmN0aW9uIiB0aGVuDQoJCVVwZGF0ZUV2ZW50UG9pbnRzKCBzZWxmLl9wbGF5ZXJQb2ludHNEYXRhICkNCgllbHNlDQoJCXByaW50KCAiTE9DQUxfSElTVE9SWV9FVkVOVF9QT0lOVFNfVU5BVkFJTEFCTEU6IG9yaWdpbmFsIGxvY2FsIGVuZGluZyBjb250aW51ZXMiICkNCgllbmQ="
+  }
+]

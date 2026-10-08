@@ -1,0 +1,93 @@
+[
+  {
+    "version": "6.73",
+    "date": "2012-01-12",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/2012-01-12_Patch",
+    "dateNote": "采用 Dota 2 的 6.73 parity 实装日期，不使用 Warcraft III DotA 的 2011 年发布日期。"
+  },
+  {
+    "version": "6.77c",
+    "date": "2013-03-21",
+    "dateSourceLabel": "Valve · 已实装的客户端平衡更新",
+    "dateSourceUrl": "https://store.steampowered.com/news/10210/",
+    "dateNote": "依据客户端更新中的卓尔游侠、司夜刺客与静谧之鞋改动，对照 6.77c parity。"
+  },
+  {
+    "version": "6.78",
+    "date": "2013-06-04",
+    "dateSourceLabel": "Valve · 已实装的客户端平衡更新",
+    "dateSourceUrl": "https://store.steampowered.com/news/10779/",
+    "dateNote": "Dota 2 主客户端的 6.78 平衡实装。"
+  },
+  {
+    "version": "6.78b",
+    "date": "2013-06-04",
+    "dateSourceLabel": "Valve · 已实装的客户端平衡更新",
+    "dateSourceUrl": "https://store.steampowered.com/news/10779/",
+    "dateNote": "6.78b 的寄生种子、战斗专注等改动随这次 Dota 2 平衡更新合并实装，不使用原始 DotA 地图的独立发布日期。"
+  },
+  {
+    "version": "6.78c",
+    "date": "2013-07-03",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/2013-07-03_Patch",
+    "dateNote": "6.78c 平衡与教学关卡在 Dota 2 主客户端的更新日；下载来源与玩法验证分别记录。"
+  },
+  {
+    "version": "6.80",
+    "date": "2014-01-29",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/Client_Patches#2014",
+    "dateNote": "采用 New Bloom 主客户端更新日期，不使用 6.80 原始 DotA 地图的 1 月 27 日日期。"
+  },
+  {
+    "version": "6.81",
+    "date": "2014-04-29",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/2014-04-29_Patch",
+    "dateNote": "采用主客户端更新日；4 月 26 日的 Valve 公告明确说明下周实装。"
+  },
+  {
+    "version": "6.82",
+    "date": "2014-09-25",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/Client_Patches#2014",
+    "dateNote": "采用 Rekindling Soul 主客户端更新日，保留此前预告日期作为另一字段。"
+  },
+  {
+    "version": "6.83",
+    "date": "2014-12-17",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/Client_Patches#2014",
+    "dateNote": "Shifting Snows 主客户端更新。"
+  },
+  {
+    "version": "6.84",
+    "date": "2015-04-30",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/Client_Patches#2015",
+    "dateNote": "采用 Source 1 主客户端实装日，不把测试服或补丁预告提前当作主客户端更新。"
+  },
+  {
+    "version": "6.85b",
+    "date": "2015-11-01",
+    "dateSourceLabel": "Valve · 主客户端更新公告",
+    "dateSourceUrl": "https://store.steampowered.com/news/19114/",
+    "dateNote": "10 月 29 日公告明确说主客户端要等南洋杯结束；11 月 1 日更新才实装该平衡修订。"
+  },
+  {
+    "version": "7.00",
+    "date": "2016-12-12",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/Version_7.00",
+    "dateNote": "采用 The New Journey 客户端更新日期，单独保留原官方公告的 UTC 日期。"
+  },
+  {
+    "version": "7.06",
+    "date": "2017-05-15",
+    "dateSourceLabel": "Liquipedia · Dota 2 客户端更新档案",
+    "dateSourceUrl": "https://liquipedia.net/dota2/May_15%2C_2017_Patch",
+    "dateNote": "7.06 主客户端更新。"
+  }
+]

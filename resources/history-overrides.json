@@ -1,0 +1,103 @@
+[
+  {
+    "version": "6.73",
+    "year": 2011,
+    "sourceUrl": "https://github.com/odota/dotaconstants/blob/master/build/patch.json",
+    "sourceLabel": "OpenDota · 规则编号索引"
+  },
+  {
+    "version": "6.78",
+    "year": 2013,
+    "sourceUrl": "https://github.com/odota/dotaconstants/blob/master/build/patch.json",
+    "sourceLabel": "OpenDota · 规则编号索引"
+  },
+  {
+    "version": "6.80",
+    "year": 2014,
+    "sourceUrl": "https://www.dota2.com/newbloom2014/day2/",
+    "title": "芳晓节与年兽",
+    "summary": "2014 年兽活动，恐怖利刃与凤凰登场，6.80 玩法调整。"
+  },
+  {
+    "version": "6.81",
+    "year": 2014,
+    "announcementTitle": "The Spring Cleaning Update",
+    "title": "春季更新",
+    "summary": "6.81 平衡调整与客户端问题修复。"
+  },
+  {
+    "version": "6.82",
+    "year": 2014,
+    "announcementTitle": "The Rekindling Soul Update",
+    "title": "魂之重燃",
+    "summary": "影魔重做与 6.82 系统、英雄和地图调整。"
+  },
+  {
+    "version": "6.83",
+    "year": 2014,
+    "sourceUrl": "https://www.dota2.com/shiftingsnows/",
+    "title": "雪落寒霜",
+    "summary": "6.83 玩法更新与冬季地图。"
+  },
+  {
+    "version": "6.84",
+    "year": 2015,
+    "sourceUrl": "https://www.dota2.com/684/"
+  },
+  {
+    "version": "6.86",
+    "year": 2015,
+    "announcementTitle": "The Balance of Power Update",
+    "title": "力量的平衡",
+    "summary": "天穹守望者登场；6.86 玩法更新与界面调整。"
+  },
+  {
+    "version": "6.87",
+    "year": 2016,
+    "announcementTitle": "New Gameplay Update",
+    "title": "春季玩法调整",
+    "summary": "扫描能力、新物品与天梯全英雄选择规则调整。"
+  },
+  {
+    "version": "7.00",
+    "year": 2016,
+    "announcementTitle": "7.00 Update - The New Journey Begins",
+    "title": "新的旅程",
+    "summary": "齐天大圣、英雄天赋与全新界面。此节点不能用 2017 年 build 2311 代替原始 7.00 客户端。"
+  },
+  {
+    "version": "7.03",
+    "year": 2017,
+    "announcementTitle": "The Bladeform Legacy Update",
+    "title": "剑心之遗",
+    "summary": "7.03 玩法更新，双头龙模型、队长模式界面与性能调整。"
+  },
+  {
+    "version": "7.06",
+    "year": 2017,
+    "sourceUrl": "https://www.dota2.com/706/"
+  },
+  {
+    "version": "7.07",
+    "year": 2017,
+    "announcementTitle": "7.07 Update — The Dueling Fates",
+    "title": "血战之命",
+    "summary": "石鳞剑士与邪影芳灵登场，7.07 玩法更新。"
+  },
+  {
+    "version": "7.23",
+    "title": "世外之争",
+    "summary": "虚无之灵与电炎绝手登场，加入中立物品系统。"
+  },
+  { "version": "7.28", "title": "永雾林渊", "summary": "森海飞霞与魔晶系统。" },
+  {
+    "version": "7.33",
+    "title": "大展宏图",
+    "summary": "更大的地图与全才英雄，新增传送门、莲花池等地图设施。"
+  },
+  { "version": "7.36", "title": "命运之席", "summary": "先天技能与命石系统。" },
+  {
+    "version": "7.37e",
+    "summary": "平衡修订。本机保存的客户端是 2025 年快照，不能据此改写补丁的 2024 年发布时间。"
+  }
+]

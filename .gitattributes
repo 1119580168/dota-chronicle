@@ -1,0 +1,16 @@
+# Authoring text is portable across Windows clones.
+* text=auto eol=lf
+
+# Keep exact bytes of original tool payloads and fingerprinted adapters.
+resources/skill-editor/** -text
+resources/compat/** -text
+resources/server/** -text
+tools/legacy-ability/**/*.lua -text
+
+# Original compiled resources, icons and generated fonts are binary.
+*.vjs_c binary
+*.vcss_c binary
+*.vxml_c binary
+*.ico binary
+*.woff binary
+*.woff2 binary

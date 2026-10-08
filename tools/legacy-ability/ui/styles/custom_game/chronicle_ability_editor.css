@@ -1,0 +1,392 @@
+/* Original Panorama authoring source. Uses the game's installed fonts and icons. */
+.ChronicleAbilityRoot {
+  width: 100%;
+  height: 100%;
+}
+.EditorDock {
+  horizontal-align: right;
+  vertical-align: top;
+  margin-top: 110px;
+  margin-right: 20px;
+  width: 432px;
+  flow-children: down;
+  background-color: #141719f5;
+  border: 1px solid #4a4540;
+  border-top: 2px solid #b44530;
+  box-shadow: #00000090 0px 5px 18px 0px;
+}
+.EditorHeader {
+  width: 100%;
+  height: 55px;
+  flow-children: right;
+  background-color: #1c2022;
+  padding: 8px 10px;
+}
+.EditorTitleButton {
+  width: fill-parent-flow(1);
+  height: 100%;
+  flow-children: down;
+}
+.EditorMark {
+  color: #bcb09a;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.EditorTitle {
+  color: #ede8dc;
+  font-family: "Reaver";
+  font-size: 20px;
+  margin-top: 3px;
+}
+.HeaderButton {
+  width: 32px;
+  height: 32px;
+  vertical-align: center;
+  margin-left: 4px;
+  background-color: #282c2e;
+  border: 1px solid #484a4b;
+}
+.HeaderButton Label {
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  color: #ede8dc;
+  font-size: 22px;
+}
+.HeaderButton:hover,
+.QuietButton:hover {
+  background-color: #373a3b;
+  border-color: #a89b82;
+}
+.EditorBody {
+  width: 100%;
+  max-height: 750px;
+  flow-children: down;
+  overflow: squish scroll;
+  padding: 12px 14px;
+}
+.EditorDock.Collapsed {
+  width: 212px;
+}
+.Collapsed #EditorBody {
+  visibility: collapse;
+}
+.EditorDock Label {
+  font-family: "Radiance";
+  color: #dedbd2;
+  font-size: 16px;
+}
+.HeroHeading {
+  width: 100%;
+  flow-children: right;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #353b3d;
+}
+.HeroCopy {
+  width: fill-parent-flow(1);
+  flow-children: down;
+}
+.CurrentHero {
+  width: 100%;
+  font-size: 22px;
+  color: #f0ede4;
+  margin-top: 3px;
+  text-overflow: ellipsis;
+}
+.SectionCaption {
+  color: #b7a88d;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.MutedLabel {
+  color: #aaa99e;
+  font-size: 13px;
+}
+.SectionHeading,
+.DirectoryHeader {
+  width: 100%;
+  flow-children: right;
+  margin-top: 11px;
+  margin-bottom: 6px;
+}
+.SectionHeading .MutedLabel,
+.DirectoryHeader .MutedLabel {
+  horizontal-align: right;
+  text-align: right;
+  width: fill-parent-flow(1);
+}
+.QuietButton {
+  height: 29px;
+  min-width: 58px;
+  padding: 4px 8px;
+  border: 1px solid #4a4e4f;
+  background-color: #24292b;
+}
+.QuietButton Label {
+  color: #e0dbcf;
+  font-size: 14px;
+  horizontal-align: center;
+  vertical-align: center;
+}
+.RefreshButton {
+  vertical-align: center;
+}
+.OwnedSkills,
+.NativeSkills {
+  width: 100%;
+  flow-children: down;
+  max-height: 137px;
+  overflow: squish scroll;
+}
+.NativeSkills {
+  visibility: collapse;
+}
+.ShowNative #NativeSkills {
+  visibility: visible;
+}
+.AbilityRow {
+  width: 100%;
+  height: 47px;
+  flow-children: right;
+  padding: 4px;
+  margin-bottom: 3px;
+  background-color: #1f2527;
+  border: 1px solid #32383a;
+}
+.AbilityRow.Selected {
+  border-color: #c05b42;
+  background-color: #302421;
+}
+.CatalogRow:hover {
+  background-color: #2a3031;
+  border-color: #9a8e75;
+}
+.AbilityIcon {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border: 1px solid #4c5050;
+}
+.AbilityCopy {
+  width: fill-parent-flow(1);
+  height: 100%;
+  flow-children: down;
+}
+.AbilityName {
+  width: 100%;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  color: #ece8de;
+}
+.AbilityMeta {
+  width: 100%;
+  font-size: 12px;
+  color: #b0aa9c;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+.LevelValue {
+  width: 25px;
+  vertical-align: center;
+  text-align: center;
+  color: #d9c5a3;
+  font-size: 16px;
+}
+.SkillAction {
+  width: 26px;
+  height: 29px;
+  margin-left: 3px;
+  vertical-align: center;
+  background-color: #2b3234;
+  border: 1px solid #4b5254;
+}
+.SkillAction Label {
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  font-size: 17px;
+}
+.SkillAction:hover {
+  background-color: #424749;
+}
+.RemoveAction:hover {
+  background-color: #723c32;
+  border-color: #c96147;
+}
+.NativeToggle {
+  width: 100%;
+  margin-top: 7px;
+  padding: 5px 0px;
+}
+.NativeToggle Label {
+  color: #ada698;
+  font-size: 13px;
+}
+.NativeToggle:hover Label {
+  color: #e6d5b5;
+}
+.EmptyLabel {
+  width: 100%;
+  color: #b2aca0;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+.SkillSearch {
+  width: 100%;
+  height: 35px;
+  padding: 6px 8px;
+  font-size: 16px;
+  color: #eeece4;
+  background-color: #0f1315;
+  border: 1px solid #62635c;
+}
+.SkillSearch #PlaceholderText {
+  margin-top: 0px;
+  color: #9da296;
+  font-size: 14px;
+}
+.SkillSearch:focus {
+  border-color: #cc8965;
+}
+.SearchHelp {
+  color: #989d99;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+.CategoryRow {
+  width: 100%;
+  flow-children: right;
+  margin-bottom: 6px;
+}
+.CategoryRow .MutedLabel {
+  vertical-align: center;
+  margin-right: 8px;
+}
+.SkillCategory {
+  width: fill-parent-flow(1);
+  height: 29px;
+  background-color: #242a2c;
+  border: 1px solid #484f50;
+  padding: 3px 7px;
+  background-position: right 6px 50%;
+  background-size: 16px 16px;
+  box-shadow: none;
+}
+.SkillCategory Label {
+  font-size: 14px;
+  color: #e0dbd0;
+  margin: 0px 24px 0px 0px;
+  vertical-align: center;
+}
+.SkillCategory:enabled:hover {
+  background-color: #323a3b;
+}
+.SkillCategory:disabled {
+  background-color: #202527;
+}
+.CatalogSkills {
+  width: 100%;
+  flow-children: down;
+}
+.Pagination {
+  width: 100%;
+  flow-children: right;
+  margin-top: 4px;
+}
+.PageLabel {
+  width: fill-parent-flow(1);
+  vertical-align: center;
+  text-align: center;
+  color: #b5ac9b;
+  font-size: 13px;
+}
+.SelectedSkill {
+  width: 100%;
+  flow-children: down;
+  margin-top: 11px;
+  padding-top: 10px;
+  border-top: 1px solid #3b3e3b;
+}
+.SelectedName {
+  font-size: 18px;
+  color: #efdfc0;
+}
+.InternalName {
+  font-size: 12px;
+  color: #a8aba3;
+  margin-top: 2px;
+}
+.DependencyNote {
+  width: 100%;
+  color: #bfb5a5;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 5px;
+}
+.RiskToggle {
+  width: 100%;
+  height: 28px;
+  margin-top: 7px;
+  visibility: collapse;
+}
+.RiskToggle Label {
+  font-size: 13px;
+  color: #e6b67d;
+}
+.HasRisk #AllowRisk {
+  visibility: visible;
+}
+.AddSkill {
+  width: 100%;
+  height: 37px;
+  margin-top: 8px;
+  background-color: #973b29;
+  border: 1px solid #ce6244;
+}
+.AddSkill Label {
+  horizontal-align: center;
+  vertical-align: center;
+  font-size: 16px;
+  color: #fff2db;
+}
+.AddSkill:hover {
+  background-color: #b44730;
+  border-color: #eda174;
+}
+.EditorDock Button:disabled {
+  opacity: 0.35;
+}
+.StatusBlock {
+  width: 100%;
+  margin-top: 10px;
+  padding: 7px 9px;
+  background-color: #212828;
+  border-left: 2px solid #8d9a8d;
+}
+.OperationStatus {
+  width: 100%;
+  font-size: 13px;
+  color: #cdd8cf;
+  line-height: 17px;
+}
+.StatusBlock.Error {
+  border-left-color: #d9694d;
+  background-color: #352322;
+}
+.StatusBlock.Error .OperationStatus {
+  color: #efbd9c;
+}
+.StatusBlock.Pending {
+  border-left-color: #c89d5e;
+}
+.StatusBlock.Pending .OperationStatus {
+  color: #e5cf9f;
+}
+.EditorFootnote {
+  width: 100%;
+  color: #969b96;
+  font-size: 11px;
+  line-height: 15px;
+  margin-top: 7px;
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "2010",
+    "title": "独立客户端的早期原型",
+    "kicker": "开发样本 · Source 1",
+    "description": "尚处研发阶段的早期样本，主界面、英雄选取和战场仍呈现开发中的形态。与后来的测试版对照，可以看到独立客户端逐步成形的过程。",
+    "contentSources": [],
+    "contentNote": "依据本机原始客户端与已保存的实际画面；年代仅核实到年份，不视为公开发行节点。"
+  },
+  {
+    "id": "2011",
+    "title": "首次公开亮相前的测试版",
+    "kicker": "2011 年 7 月 · TI1 前夕",
+    "description": "2011 年 7 月的测试客户端，早于 8 月科隆首届国际邀请赛上的首次公开亮相。本收藏保留早期主菜单，比赛组件不完整，仅开放菜单展示。",
+    "contentSources": ["https://store.steampowered.com/oldnews/5967"]
+  },
+  {
+    "id": "6.77c",
+    "title": "测试末期的旧战场",
+    "kicker": "2013 年春 · 旧 HUD 与选人",
+    "description": "2013 年春的 6.77 系列修订，仍保留旧 HUD、卡牌式选人和当时的三路战场。本机保存的是 5 月构建，处于 Dota 2 结束测试、正式开放之前。",
+    "contentSources": [
+      "https://store.steampowered.com/news/10210/",
+      "https://www.dota2.com/thebetaisover"
+    ]
+  },
+  {
+    "id": "6.78b",
+    "title": "TI3 前的六月平衡",
+    "kicker": "2013 年 6 月 · 测试末期",
+    "description": "6.78 与 6.78b 的规则改动在 2013 年 6 月进入 Dota 2，继续调整英雄与比赛平衡。6 月客户端快照保留正式开放前的界面，展示 TI3 之前的游戏面貌。",
+    "contentSources": [
+      "https://store.steampowered.com/news/10779/",
+      "https://www.dota2.com/thebetaisover"
+    ]
+  },
+  {
+    "id": "6.80c",
+    "title": "芳晓节后的春季快照",
+    "kicker": "2014 年春 · 节庆资源留存",
+    "description": "6.80 系列随芳晓节带来恐怖利刃与凤凰。本机 4 月快照保留 2014 年兽，以及更早的冥魂之夜资源，呈现早期官方合作活动；两项活动各有独立的首发时期。",
+    "contentSources": [
+      "https://www.dota2.com/newbloom2014/day2/",
+      "https://www.dota2.com/wraithnight/"
+    ]
+  },
+  {
+    "id": "6.81",
+    "title": "春季清理与 TI4 赛季",
+    "kicker": "2014 年春 · 客户端与平衡",
+    "description": "2014 年春季清理更新将 6.81 规则调整与客户端改进带入游戏。本机 7 月快照保留 Source 1 的界面与战场，可用于展示 TI4 时期的客户端形态。",
+    "contentSources": [
+      "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/919042306888221098"
+    ]
+  },
+  {
+    "id": "6.83",
+    "title": "雪落寒霜的冬季战场",
+    "kicker": "2014 年 12 月 · 冬季地图",
+    "description": "2014 年末的雪落寒霜更新带来冬季地图与 6.83 平衡调整。这份 12 月快照保留 Reborn 之前的旧界面；Source 1 客户端在此后仍继续更新。",
+    "contentSources": ["https://www.dota2.com/shiftingsnows/"]
+  },
+  {
+    "id": "6.85b",
+    "title": "Reborn 后的平衡修订",
+    "kicker": "2015 年秋 · Source 2 已上线",
+    "description": "Reborn 完成引擎迁移后的 6.85b 修订，调整末日使者的神杖效果与焦土，以及育母蜘蛛的蜘蛛减速。本包展示已启用 Source 2、新主界面与自定义游戏的客户端。",
+    "contentSources": [
+      "https://store.steampowered.com/news/19114/",
+      "https://www.dota2.com/reborn/"
+    ]
+  },
+  {
+    "id": "6.88c",
+    "title": "TI6 之后的 6.xx 修订",
+    "kicker": "2016 年 8 月 · 7.00 前夕",
+    "description": "TI6 结束后的 6.88c 继续调整英雄与装备。本机 9 月快照保留天赋树和三格背包加入前的规则，可与同年 12 月的 7.00 对照。",
+    "contentSources": [
+      "https://store.steampowered.com/news/23584/",
+      "https://www.dota2.com/700/"
+    ]
+  },
+  {
+    "id": "7.00",
+    "title": "新的旅程：天赋与背包",
+    "kicker": "2016 年 12 月 · 齐天大圣登场",
+    "description": "7.00 带来齐天大圣、英雄天赋、三格背包与新版 HUD，并重构赛前流程和地图。本档案保存 2016 年 12 月的首发构建，独立于 2017 年的后续客户端快照。",
+    "contentSources": ["https://www.dota2.com/700/"]
+  },
+  {
+    "id": "build2311-20170716",
+    "title": "TI7 前的夏季客户端",
+    "kicker": "2017 年 7 月 · 构建 2311",
+    "description": "2017 年 7 月 16 日保存的 Source 2 客户端。天赋、背包与新版 HUD 已成为比赛的一部分，可与前一年底的 7.00 首发界面对照；此档案以实际构建编号标注。",
+    "contentSources": ["https://www.dota2.com/700/"],
+    "contentNote": "快照日期和已有功能依据原始 steam.inf 及本机实际画面；不据收藏文件名断言精确玩法补丁。"
+  },
+  {
+    "id": "7.19",
+    "title": "TI8 前的夏季平衡",
+    "kicker": "2018 年 7 月 · 赛事前调整",
+    "description": "7.19 在 TI8 前调整英雄平衡。本机 8 月快照另保留暗月、破泞之战和冥晶之窟等合作活动资源，这些活动的首发时间分别属于更早的更新。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.19",
+      "https://www.dota2.com/darkmoon/",
+      "https://www.dota2.com/international2017/battlepass/",
+      "https://www.dota2.com/international2018/battlepass/"
+    ]
+  },
+  {
+    "id": "7.22",
+    "title": "神杖升级全面补齐",
+    "kicker": "2019 年 5 月 · 神杖消耗升级",
+    "description": "7.22 为剩余 24 名英雄补齐神杖效果，并加入神杖消耗升级与肉山掉落变化。本机首发时期构建另外保留迎霜节资源，供合作活动回顾。",
+    "contentSources": ["https://www.dota2.com/patches/7.22"]
+  },
+  {
+    "id": "7.23e",
+    "title": "前哨与经验天赋再调整",
+    "kicker": "2019 年 12 月 · 世外之争修订",
+    "description": "世外之争的后续修订移除经验天赋与两座圣坛，将前哨经验结算改为每 10 分钟一次。这一保存点展示中立物品、前哨与个人信使系统推出后的早期调整。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.23e",
+      "https://www.dota2.com/outlanders/"
+    ]
+  },
+  {
+    "id": "7.27c",
+    "title": "迷宫时期的盛夏平衡",
+    "kicker": "2020 年 7 月 · 阿哈利姆迷宫",
+    "description": "7.27c 是 2020 年 7 月的英雄与装备修订。本机同月快照保留首次阿哈利姆迷宫，展示分支房间、技能碎片和四人合作挑战。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.27c",
+      "https://www.dota2.com/aghanim/"
+    ]
+  },
+  {
+    "id": "7.30e",
+    "title": "TI10 后的平衡修订",
+    "kicker": "2021 年补丁 · 2022 年迷宫快照",
+    "description": "2021 年 10 月的 7.30e 降低小野怪营地经验，并调整装备与英雄。本机 2022 年 2 月快照另保留冬季推出的阿哈利姆天地迷宫，作为二期活动的展示入口。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.30e",
+      "https://www.dota2.com/labyrinth/"
+    ]
+  },
+  {
+    "id": "7.32",
+    "title": "旗手兵与战场节奏重整",
+    "kicker": "2022 年 8 月 · 经验与防御机制",
+    "description": "7.32 加入旗手兵，重排升级经验，改变防御符文刷新规则并移除中路小野点。本机 8 月快照位于 TI11 前的规则调整期。",
+    "contentSources": ["https://www.dota2.com/patches/7.32"]
+  },
+  {
+    "id": "7.35d",
+    "title": "圣剑双姿态与命石前夕",
+    "kicker": "2024 年 3 月补丁 · 4 月保存点",
+    "description": "7.35d 将圣剑的额外攻击与法术增强拆分为可切换姿态，并继续调整装备和英雄平衡。本机保存的是 2024 年 4 月 29 日 / build 6040 构建，适合对照 7.36 推出先天技能与命石前的客户端。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.35d",
+      "https://www.dota2.com/patches/7.36"
+    ]
+  },
+  {
+    "id": "7.37e",
+    "title": "命石时代的年末平衡",
+    "kicker": "2024 年补丁 · 2025 年保存点",
+    "description": "2024 年 11 月的 7.37e 继续调整命石时代的英雄平衡。本机保存的是 2025 年 2 月构建，可展示先天技能与命石已普及后的客户端；两项系统的首发节点是 7.36。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.37e",
+      "https://www.dota2.com/patches/7.36"
+    ]
+  }
+]

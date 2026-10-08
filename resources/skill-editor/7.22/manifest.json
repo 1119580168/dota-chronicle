@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "clientBuild": 3504,
+  "files": [
+    {
+      "source": "panorama/layout/custom_game/chronicle_ability_editor.vxml_c",
+      "target": "game/dota/panorama/layout/custom_game/chronicle_ability_editor.vxml_c",
+      "sha256": "fad849103d3e1d11743b3d03c2053194908cdf5e381b6e406c0f24da1c04439b"
+    },
+    {
+      "source": "panorama/scripts/custom_game/chronicle_ability_editor.vjs_c",
+      "target": "game/dota/panorama/scripts/custom_game/chronicle_ability_editor.vjs_c",
+      "sha256": "21dee2bc7b10f13f8754f338ecbf40aac9c5dd6fe498da60204dab88b0f5477e"
+    },
+    {
+      "source": "panorama/styles/custom_game/chronicle_ability_editor.vcss_c",
+      "target": "game/dota/panorama/styles/custom_game/chronicle_ability_editor.vcss_c",
+      "sha256": "2aeafca959092ef28653f9bfbd88649b25a58c186306d35ef9b729b66c02003d"
+    },
+    {
+      "source": "chronicle_skill_editor_v1.lua",
+      "target": "game/dota/scripts/vscripts/chronicle_skill_editor_v1.lua",
+      "sha256": "eedcbce96de4e1364ee2de9967a68038f8f9b1870b65485dd4afceedc61d1b2b"
+    }
+  ]
+}

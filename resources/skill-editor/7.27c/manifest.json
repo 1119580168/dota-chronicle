@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "clientBuild": 4397,
+  "profile": "727c-aghanim-v1",
+  "files": [
+    {
+      "source": "panorama/layout/custom_game/chronicle_labyrinth_ability_editor.vxml_c",
+      "target": "game/dota/panorama/layout/custom_game/chronicle_labyrinth_ability_editor.vxml_c",
+      "sha256": "f0916e703fd67c4841f8ad63f37f736872616af90c4caef763f91b58d5755055"
+    },
+    {
+      "source": "panorama/scripts/custom_game/chronicle_labyrinth_ability_editor.vjs_c",
+      "target": "game/dota/panorama/scripts/custom_game/chronicle_labyrinth_ability_editor.vjs_c",
+      "sha256": "7bc4f705b5dcaaec9e66ac397df00144a2812c40d8ea8ad20bbce4a4089ac7e5"
+    },
+    {
+      "source": "panorama/styles/custom_game/chronicle_labyrinth_ability_editor.vcss_c",
+      "target": "game/dota/panorama/styles/custom_game/chronicle_labyrinth_ability_editor.vcss_c",
+      "sha256": "8403f5e7edf94731974157941fb395a3d85895d0ac12881b3cf2c785a68879d1"
+    },
+    {
+      "source": "chronicle_labyrinth_skill_editor_v1.lua",
+      "target": "game/dota/scripts/vscripts/chronicle_labyrinth_skill_editor_v1.lua",
+      "sha256": "c79146bda3604964c64a151bbd90acfeee631172fc6447936a30dc2447701c37"
+    }
+  ]
+}

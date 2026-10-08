@@ -1,0 +1,459 @@
+[
+  {
+    "version": "7.31",
+    "title": "原始野性与野区秩序的重塑",
+    "summary": "兽加入战场，工程师移除遥控炸弹与静滞陷阱。野怪获得随时间成长的属性，新增远古与大型野怪阵容；英灵胸针、怨灵之契和宽容之靴带来新的出装选择。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.31",
+      "https://www.dota2.com/primalbeast",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english"
+    ]
+  },
+  {
+    "version": "7.31b",
+    "title": "紫怨涨价与新技能的首轮校准",
+    "summary": "魔法消耗降低改为递减叠加，紫怨增加图纸费用。娜迦海妖的激流改为本体与幻象累计攻击触发，工程师的爆破自伤降低，小小的持树输出受到削减。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.31b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.31b&language=english"
+    ]
+  },
+  {
+    "version": "7.31c",
+    "title": "怨灵之契加强与持树输出收紧",
+    "summary": "怨灵之契扩大光环范围，提高图腾减伤与持续伤害。小小的持树伤害和额外建筑伤害下调，兽的部分伤害与减速削弱，黯灭可累积的伤害层数也减少。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.31c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.31c&language=english"
+    ]
+  },
+  {
+    "version": "7.31d",
+    "title": "玛西入选队长与补给规则调整",
+    "summary": "玛西进入队长模式。治疗药膏对队友使用时持续时间减半，空灵挂件从降低魔耗改为增加最大魔法值，黑皇杖冷却延长；肉山在没有近身目标时会攻击并立即摧毁守卫单位。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.31d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.31d&language=english"
+    ]
+  },
+  {
+    "version": "7.32",
+    "title": "旗手兵登场与兵线经济再分配",
+    "summary": "旗手兵加入兵线，提供恢复光环与团队额外赏金。中路附近小型野怪营地移除，升级经验和连杀经验重新调整，被动金钱降低；兽进入队长模式，防御符文刷新规则改变。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.32",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english"
+    ]
+  },
+  {
+    "version": "7.32b",
+    "title": "灵魂之戒涨价与新改动的修补",
+    "summary": "灵魂之戒图纸费用提高，灵龛与魂之灵瓮施法距离缩短。玛西的属性、移速与技能获得加强，变体精灵改善基础恢复和变体攻击伤害；多项新版技能交互错误得到修复。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.32b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.32b&language=english"
+    ]
+  },
+  {
+    "version": "7.32c",
+    "title": "刷新道具共冷却与团战能力收紧",
+    "summary": "刷新球与刷新球碎片开始共用冷却，放入背包后冷却不再推进。血精石移除启动生命消耗，虚空假面、维萨吉和玛西部分能力削弱，并修复多项技能、魔晶与神杖交互。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.32c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.32c&language=english"
+    ]
+  },
+  {
+    "version": "7.32d",
+    "title": "怨灵之契退出全伤害减免时代",
+    "summary": "怨灵之契图腾只减免物理伤害，不再降低魔法与纯粹伤害。血精石生命和魔法加成减少，洞察烟斗屏障加强，刃甲主动反伤提高；旗手兵给予附近队友的赏金增加。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.32d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.32d&language=english"
+    ]
+  },
+  {
+    "version": "7.32e",
+    "title": "琼英碧灵现身与莉娜节奏降温",
+    "summary": "琼英碧灵作为新英雄加入战场。莉娜的炽魂攻速与部分天赋削弱，宽容之靴不再使用充能；远程兵等级提高，早期转化兵线的做法受限，为下一次大型改版过渡。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.32e",
+      "https://www.dota2.com/deadreckoning",
+      "https://store.steampowered.com/news/posts/?appids=570&enddate=1678478728&feed=steam_updatesFeb",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.32e&language=english"
+    ]
+  },
+  {
+    "version": "7.33",
+    "title": "大展宏图开启全才英雄时代",
+    "summary": "地图向四周扩展，加入双生之门、折磨者、莲花池、经验神符与观察者。全才英雄成为第四类属性，技能免疫重做为减益免疫，中立物品转向代币选择，战场目标显著增多。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.33",
+      "https://www.dota2.com/newfrontiers",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english"
+    ]
+  },
+  {
+    "version": "7.33b",
+    "title": "双生之门放缓与折磨者规则补全",
+    "summary": "双生之门引导增加一秒，幻象不再帮助真实英雄分摊折磨者反伤。血腥榴弹可以堆叠，灵匣获得回魔并降低费用；美杜莎的魔法护盾与分裂攻击加强，克林克兹改善基础属性。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.33b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.33b&language=english"
+    ]
+  },
+  {
+    "version": "7.33c",
+    "title": "经验神符共享与全才伤害抬升",
+    "summary": "拾取经验神符也为队内等级最低的英雄提供经验，拉野者获得额外经验分成。全才英雄每点属性提供的攻击力提高，折磨者反伤必定覆盖攻击者，部分地图死路被清理。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.33c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.33c&language=english"
+    ]
+  },
+  {
+    "version": "7.33d",
+    "title": "先锋盾削弱与全才英雄属性回调",
+    "summary": "先锋盾的生命恢复和伤害格挡降低，玲珑心改为双虚无宝石合成，不再提供生命恢复。虚无之灵、风行者与玛西部分基础属性或成长下调，亚巴顿的基础攻速也受到削减。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.33d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.33d&language=english"
+    ]
+  },
+  {
+    "version": "7.33e",
+    "title": "美杜莎与变体精灵的后续回调",
+    "summary": "美杜莎的智力、分裂攻击和秘术异蛇收益降低，变体精灵神杖窃取属性减少。魅惑魔女与育母蜘蛛部分技能削弱，不朽尸王的魔晶墓碑改为施放时直接容纳指定队友。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.33e",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.33e&language=english"
+    ]
+  },
+  {
+    "version": "7.34",
+    "title": "选禁重排与减速抗性独立成型",
+    "summary": "队长模式选禁顺序重排，减速抗性成为独立属性，状态抗性主要影响减速持续时间。备选施法获得统一操作提示，扫描增加充能；祈求者转为全才英雄，诡计之雾可接续覆盖队友。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.34",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.34&language=english"
+    ]
+  },
+  {
+    "version": "7.34b",
+    "title": "祈求者与沙王的新能力再校准",
+    "summary": "祈求者的冷却缩减不再作用于物品，基础护甲和部分天赋削弱。沙王的沙尘暴低等级移动速度降低，巫医与力丸部分输出回调；魂之灵瓮调整合成并降低总价。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.34b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.34b&language=english"
+    ]
+  },
+  {
+    "version": "7.34c",
+    "title": "直升机成长回调与裂魂人提速",
+    "summary": "矮人直升机敏捷成长和生命天赋降低，祈求者的基础恢复及部分技能削弱。裂魂人的冲刺速度与终极技能伤害提高，撼地者的天赋顺序调整；炎阳纹章移动速度加成下调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.34c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.34c&language=english"
+    ]
+  },
+  {
+    "version": "7.34d",
+    "title": "幻影刺客回调与核心装备涨价",
+    "summary": "幻影刺客暴击触发几率降低，神杖冷却效果重新调整。刃甲伤害与迈达斯之手攻速减少，恐鳌之心图纸涨价；露娜的部分技能与魔晶加强，石鳞剑士施法成本提高。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.34d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.34d&language=english"
+    ]
+  },
+  {
+    "version": "7.34e",
+    "title": "恐鳌之心降温与耐久体系回调",
+    "summary": "恐鳌之心提高费用并减少力量，迈达斯之手充能恢复更慢。钢背兽、昆卡、瘟疫法师与裂魂人部分能力削弱，混沌骑士刷野吸血受到限制；永世法衣魔抗与祭品护甲提高。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.34e",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.34e&language=english"
+    ]
+  },
+  {
+    "version": "7.35",
+    "title": "战旗与增幅神符改写战场收益",
+    "summary": "肉山新增战旗掉落，双倍伤害神符改为兼顾物理与法术的增幅伤害神符。血精石提供技能范围加成，绝刃与圣斧加入商店；双生之门消耗魔法，信使改用受击次数判定死亡。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.35",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.35&language=english"
+    ]
+  },
+  {
+    "version": "7.35b",
+    "title": "血精石移除回魔与法师克星加强",
+    "summary": "血精石主动不再恢复魔法，永世法衣层数持续时间缩短。法师克星提高施法伤害压制，陨星锤降低费用；殁境神蚀者部分伤害削弱，小小的山崩和投掷伤害获得加强。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.35b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.35b&language=english"
+    ]
+  },
+  {
+    "version": "7.35c",
+    "title": "黑皇杖魔抗加强与法术体系回调",
+    "summary": "黑皇杖主动魔法抗性提高至六成，血精石改用虚无宝石合成并增加回魔。莱恩的魔晶、虚空假面的团战能力和龙骑士的冰霜龙减速回调，血棘附加命中伤害降低。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.35c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.35c&language=english"
+    ]
+  },
+  {
+    "version": "7.35d",
+    "title": "圣剑分流为攻击与法术两种姿态",
+    "summary": "圣剑可以在额外攻击力与法术增强之间切换，不再同时提供两种完整收益。漩涡触发几率降低，黑皇杖冷却延长；支配野怪开始取得金钱赏金，孽主的神杖效果调整。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.35d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.35d&language=english"
+    ]
+  },
+  {
+    "version": "7.36",
+    "title": "先天技能与命石开启英雄分支",
+    "summary": "每位英雄获得先天技能，并可在赛前选择命石改变玩法方向；命石选定后整局固定。敌方魔法条常驻显示，技能范围加成覆盖光环与分裂攻击，大量英雄技能、天赋和升级路径重做。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.36",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.36&language=english"
+    ]
+  },
+  {
+    "version": "7.36a",
+    "title": "命石首轮修补与束缚位移收紧",
+    "summary": "修复命石、先天技能和多个英雄引发的错误与崩溃，原力法杖等位移不再作用于被束缚的单位。斧王击杀护甲转为随淘汰之刃成长，修补匠的传送护盾命石获得加强。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.36a",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.36a&language=english"
+    ]
+  },
+  {
+    "version": "7.36b",
+    "title": "击退规则明晰与护甲收益重算",
+    "summary": "明确强制位移与击退的规则，并调整非玩家单位的视野共享。赤红甲主动格挡改按施法者最大生命计算，斧王的击杀护甲收益降低；支配野怪开始同时获得经验赏金。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.36b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.36b&language=english"
+    ]
+  },
+  {
+    "version": "7.36c",
+    "title": "灵匣涨价与折光防护重新定量",
+    "summary": "灵匣图纸涨价，连带提高绝刃总价；血棘的沉默被驱散后不再结算伤害。圣堂刺客的折光屏障改为固定单层数值，影魔部分减速与天赋回调，秘奥闪光提高冷却和治疗量。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.36c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.36c&language=english"
+    ]
+  },
+  {
+    "version": "7.37",
+    "title": "破坏机制厘清与肉山掉落重排",
+    "summary": "集中整理破坏效果对命石、先天技能及被动技能的作用，并统一技能抵挡、反弹和传送分类。肉山第二次死亡起必掉战旗，后续奖励按昼夜分配；部分英雄先天能力再次重做。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.37",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.37&language=english"
+    ]
+  },
+  {
+    "version": "7.37b",
+    "title": "慧光叠加限制与缚灵索范围收紧",
+    "summary": "慧光及其升级物品的回魔增幅、法术吸血增幅不再相互叠加，缚灵索束缚范围缩小。米拉娜的部分增益更快达到峰值，祈求者的火元素命石加强，亚巴顿的部分技能收益降低。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.37b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.37b&language=english"
+    ]
+  },
+  {
+    "version": "7.37c",
+    "title": "团队恢复回调与百戏大王降速",
+    "summary": "梅肯斯姆和卫士胫甲治疗量降低，圣洁吊坠治疗增幅与洞察烟斗屏障削弱。百戏大王基础移速下降，修补匠护盾调整；幻影长矛手的幻象伤害、存续时间与冲锋敏捷获得加强。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.37c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.37c&language=english"
+    ]
+  },
+  {
+    "version": "7.37d",
+    "title": "小件双倍收益退场与辅助装回调",
+    "summary": "护腕、空灵挂件与怨灵系带取消二十五分钟属性翻倍。奥术鞋、缚灵索涨价，散魂剑的免疫减速改为减速抗性；风行者旋风和米拉娜部分增益下调，百戏大王属性继续回调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.37d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.37d&language=english"
+    ]
+  },
+  {
+    "version": "7.37e",
+    "title": "影魔灵魂收益与美杜莎毒箭回调",
+    "summary": "影魔每魂伤害降低，死亡会清除额外减甲增益。美杜莎毒箭不再由幻象施加，减速收益改为随分裂箭成长；绝刃降低技能附加伤害并减价，冥魂大帝基础护甲提高、吸血回调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.37e",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.37e&language=english"
+    ]
+  },
+  {
+    "version": "7.38",
+    "title": "流动水域重绘地图与中立制作",
+    "summary": "地图外沿与野区加入可顺流加速的水道，肉山回到河道，经验神符改为智慧神庙。中立物品代币被制作系统取代，打野收集材料后选择神器与附魔；全才英雄的属性攻击收益下调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.38",
+      "https://www.dota2.com/wanderingwaters",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.38&language=english"
+    ]
+  },
+  {
+    "version": "7.38b",
+    "title": "折磨者收益回调与背包缓冲延长",
+    "summary": "首次从背包移回装备栏的无冷却缓冲延长至五秒。折磨者提高屏障与恢复，团队金钱奖励减少；莲花不再能由特定复制单位拾取，微光披风移速下调并提高魔耗，绝刃冷却缩短。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.38b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.38b&language=english"
+    ]
+  },
+  {
+    "version": "7.38c",
+    "title": "夜魇优势路重排与支配单位改类",
+    "summary": "夜魇优势路一塔、兵线路径、拉野营地和附近坡道重新布置，并修正肉山巢穴视野与寻路。支配单位改按类英雄处理，魂之灵瓮提高恢复抑制；戴泽与亚巴顿部分能力回调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.38c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.38c&language=english"
+    ]
+  },
+  {
+    "version": "7.39",
+    "title": "折磨者延后与肉山区域再校准",
+    "summary": "折磨者首次刷新延后至二十分钟，肉山的成长、猛击与报复怒吼加强。三角区、莲花池和肉山巢穴周边地形调整，闪烁匕首取消超距施放惩罚，中立神器轮换与多名英雄重做同步展开。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.39",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.39&language=english"
+    ]
+  },
+  {
+    "version": "7.39b",
+    "title": "天辉优势路微调与沙王能力抬升",
+    "summary": "天辉下路一塔与附近树线微调，修复无法放置守卫的位置。沙王的部分天赋加强并降低技能魔耗，敌法师反弹法术的燃魔倍率提高；凯的部分技能时长与反击效果得到调整。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.39b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.39b&language=english"
+    ]
+  },
+  {
+    "version": "7.39c",
+    "title": "拉扯道具交互与守望视野再调整",
+    "summary": "飓风长戟对自身的强化可被驱散，鱼叉投射物可被躲避。观察者启动范围缩小，折磨者反伤不再计入类英雄单位；绝刃降价且破坏效果不可驱散，死亡先知神杖幽魂移除减速。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.39c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.39c&language=english"
+    ]
+  },
+  {
+    "version": "7.39d",
+    "title": "刃甲被动收紧与远程装备降距",
+    "summary": "刃甲被动反伤与攻击力削弱，魔龙枪和飓风长戟减少攻击距离。天堂之戟缴械延长，漩涡不再对幻象造成额外伤害；远古营地刷新框扩大，虚空假面部分技能冷却缩短。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.39d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.39d&language=english"
+    ]
+  },
+  {
+    "version": "7.39e",
+    "title": "凯进入队长模式与刷新成本递增",
+    "summary": "凯加入队长模式，刷新球连续使用会逐步增加冷却且提高魔耗。叠野的金钱与经验惩罚加重，支配技能增加魔耗与受伤限制；虚灵形态不再与减益免疫同时生效。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.39e",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.39e&language=english"
+    ]
+  },
+  {
+    "version": "7.40",
+    "title": "朗戈奏响战歌与天赋点独立化",
+    "summary": "新英雄朗戈以乐曲支援队友。天赋使用独立天赋点，不再占用技能点；四塔按存活兵营获得护甲，助攻金钱公式重做，旗手兵光环不再作用于英雄，诡计之雾可直接在背包使用。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.40",
+      "https://www.dota2.com/largo",
+      "https://steamcommunity.com/ogg/570/announcements/detail/533243594419470468",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.40&language=english"
+    ]
+  },
+  {
+    "version": "7.40b",
+    "title": "灵龛充能归一与新版英雄再校准",
+    "summary": "同一英雄持有灵龛和魂之灵瓮时，充能优先归于魂之灵瓮；多份灵龛不再重复取得充能。白银之锋减益持续时间缩短，石鳞剑士移速和突进距离提高，幽鬼敏捷与部分输出加强。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.40b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.40b&language=english"
+    ]
+  },
+  {
+    "version": "7.40c",
+    "title": "朗戈进入队长与骷髅推塔收紧",
+    "summary": "朗戈进入队长模式并提高智力成长，绝刃可以拆分，灵匣属性与回魔降低。克林克兹骷髅的建筑伤害惩罚大幅加重，育母蜘蛛的恢复抑制与蛛网充能等收益受到削减。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.40c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.40c&language=english"
+    ]
+  },
+  {
+    "version": "7.41",
+    "title": "命石移除与先天成长体系重构",
+    "summary": "命石从游戏中移除，先天技能不再随其他技能升级，改为固定收益或随英雄等级成长。肉山与折磨者初始位置交换，智慧神庙和莲花池争夺倒计时改为逆转，治疗与吸血计算统一调整。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41&language=english"
+    ]
+  },
+  {
+    "version": "7.41a",
+    "title": "圣化护服回调与新版输出再平衡",
+    "summary": "圣化护服降低魔法抗性与恢复层数时的移速加成。冥魂大帝基础攻击间隔和部分天赋削弱，噬魂鬼攻击与移速收益下调；工程师地雷伤害减少，风行者基础敏捷提高。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41a",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41a&language=english"
+    ]
+  },
+  {
+    "version": "7.41b",
+    "title": "黑皇杖时长固定与缚灵索扩圈",
+    "summary": "黑皇杖主动持续时间固定，不再受增益时长放大影响。缚灵索束缚范围扩大，折磨者反伤随时间成长减缓；米波移速与力量成长降低，卓尔游侠基础敏捷和多重射击天赋加强。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41b",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41b&language=english"
+    ]
+  },
+  {
+    "version": "7.41c",
+    "title": "肉山巢穴遮蔽与位移限制补全",
+    "summary": "飞行视野不再绕过肉山巢穴的内外视野限制。鱼叉不再移动被缠绕或束缚的使用者，散魂剑持续时间与宽容之靴光环移速降低；折磨者死亡后的恢复光环加强，血精石提高生命加成。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41c",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41c&language=english"
+    ]
+  },
+  {
+    "version": "7.41d",
+    "title": "传送落点微调与变体属性重排",
+    "summary": "自施传送的落点更靠近遗迹，夜魇泉水恢复范围略增。诡计之雾使用时自动通知队伍，达贡之神力降价；变体精灵提高基础敏捷并降低力量，小小投掷距离和部分控制收益回调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41d",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41d&language=english"
+    ]
+  },
+  {
+    "version": "7.41e",
+    "title": "双生之门受控与圣剑叠加收紧",
+    "summary": "缠绕可以打断双生之门引导，多把圣剑的法术增强不再叠加。蝴蝶从部分敏捷转向攻击力，深渊之刃力量提高；发条技师齿轮视野降低且不再封野，军团指挥官基础攻速上调。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41e",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41e&language=english"
+    ]
+  },
+  {
+    "version": "7.41f",
+    "title": "核心大件涨价与追踪收益回调",
+    "summary": "代达罗斯之殇、魔龙枪和恐鳌之心图纸涨价，天堂之戟图纸降价。赏金猎人的追踪自享金钱降低，共享视野天赋移到更高等级；莉娜基础智力与炽魂攻速下调，树精卫士技能成本调整。",
+    "contentSources": [
+      "https://www.dota2.com/patches/7.41f",
+      "https://www.dota2.com/datafeed/patchnotes?version=7.41f&language=english"
+    ]
+  }
+]

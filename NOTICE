@@ -1,0 +1,13 @@
+Dota Chronicle — Copyright 2026 Dota Chronicle contributors.
+The original launcher source is provided under PolyForm Noncommercial 1.0.0.
+Dota 2, Steam, Source and Source 2 belong to Valve Corporation. This independent
+project is not affiliated with or endorsed by Valve. No game clients, game maps,
+Steam emulators or Valve binaries are included in the distribution.
+
+Third-party software keeps its own license. Electron and Chromium notices are
+included in the Windows application directory. Lucide icons use the ISC license.
+Barlow Condensed, Cinzel, Noto Sans SC and Noto Serif SC fonts use the SIL Open
+Font License 1.1.
+Full notices are bundled in resources/licenses.
+The 7.32 local-server adapter originates from OMG15, Copyright (c) 2021-2022
+Xavier Zheng, under the MIT license. Its full license is also included there.

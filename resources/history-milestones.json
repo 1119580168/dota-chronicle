@@ -1,0 +1,23 @@
+[
+  {
+    "id": "reborn-announcement",
+    "version": "Reborn",
+    "announcementTitle": "Dota 2 Reborn",
+    "title": "Reborn 公布",
+    "summary": "新的界面、Source 2 引擎与自定义游戏计划。"
+  },
+  {
+    "id": "reborn-custom-games",
+    "version": "Reborn",
+    "announcementTitle": "Dota 2 Reborn: Custom Games",
+    "title": "自定义游戏登场",
+    "summary": "官方介绍 Dota 2 内的社区自定义游戏。"
+  },
+  {
+    "id": "reborn-beta",
+    "version": "Reborn Beta",
+    "announcementTitle": "Dota 2 Reborn: The Beta Begins",
+    "title": "Source 2 公开测试开启",
+    "summary": "Reborn Beta 开放下载安装与游玩。该原始 Beta 构建尚未纳入本机运行适配器。"
+  }
+]

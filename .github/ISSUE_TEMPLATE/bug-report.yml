@@ -1,0 +1,41 @@
+name: 问题反馈
+description: 报告启动、界面或功能异常
+title: "[Bug] "
+body:
+  - type: input
+    id: tool-version
+    attributes:
+      label: 工具版本
+      placeholder: 例如 0.3.9 或 0.1.2
+    validations:
+      required: true
+  - type: input
+    id: client-version
+    attributes:
+      label: DOTA2 版本与 build
+      description: 可在工具中查看；无法读取时填写“不明”。
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Windows 版本与运行环境
+      placeholder: 例如 Windows 11、本地普通比赛 / 英雄试玩 / 游廊
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 说明从哪个入口开始、何时发生问题。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期结果与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 错误提示或截图（可选）
+      description: 只附相关提示。遮挡个人资料，不公开原生日志、房间密码、控制通道凭据或游戏文件。

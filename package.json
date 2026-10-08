@@ -1,0 +1,81 @@
+{
+  "name": "dota-chronicle",
+  "productName": "Dota Chronicle",
+  "version": "0.3.9",
+  "description": "Offline historical Dota 2 library and local-room launcher",
+  "author": "Dota Chronicle contributors",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "main": "src/main.cjs",
+  "scripts": {
+    "assets": "node scripts/build-assets.cjs",
+    "css": "tailwindcss -i src/ui/styles.input.css -o src/ui/styles.css --minify",
+    "build": "npm run assets && npm run css",
+    "start": "npm run prepare:electron && electron .",
+    "test": "node --test tests/*.test.cjs",
+    "test:ui": "npm run prepare:electron && node tests/ui-smoke.cjs",
+    "test:skills": "npm run prepare:electron && node tests/legacy-ability-ui.cjs && node tests/skill-editor-launch-ui.cjs",
+    "build:skills": "node scripts/build-skill-editor.cjs",
+    "format": "prettier --write src scripts tests docs README.md package.json resources/catalog.json resources/compat/recipes.json",
+    "pack": "npm run prepare:electron && npm run build && electron-builder --win dir",
+    "release": "npm run pack && powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/package-release.ps1",
+    "test:experience": "npm run prepare:electron && node tests/ui-experience.cjs",
+    "test:community": "npm run prepare:electron && node tests/community-ui.cjs",
+    "test:room": "npm run prepare:electron && node tests/listen-room-ui.cjs",
+    "prepare:electron": "node node_modules/electron/install.js"
+  },
+  "devDependencies": {
+    "@fontsource/barlow-condensed": "5.3.0",
+    "@fontsource/cinzel": "5.3.0",
+    "@fontsource/noto-sans-sc": "5.3.0",
+    "@fontsource/noto-serif-sc": "5.3.0",
+    "@tailwindcss/cli": "4.3.3",
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3",
+    "lucide": "1.51.0",
+    "playwright": "1.63.0",
+    "prettier": "3.9.9",
+    "tailwindcss": "4.3.3"
+  },
+  "build": {
+    "appId": "org.dotachronicle.desktop",
+    "productName": "Dota Chronicle",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/**/*",
+      "resources/**/*",
+      "LICENSE",
+      "NOTICE",
+      "package.json"
+    ],
+    "asar": true,
+    "extraFiles": [
+      "README.md",
+      "LICENSE",
+      "NOTICE",
+      "CHANGELOG.md",
+      {
+        "from": "docs",
+        "to": "docs",
+        "filter": [
+          "**/*.md"
+        ]
+      }
+    ],
+    "asarUnpack": [
+      "src/backend/**/*",
+      "resources/server/**/*",
+      "resources/skill-editor/**/*",
+      "resources/compat/**/*"
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ],
+      "signExecutable": false,
+      "icon": "resources/icon.ico"
+    },
+    "electronDist": "node_modules/electron/dist"
+  }
+}

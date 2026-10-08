@@ -1,0 +1,544 @@
+[
+  {
+    "version": "7.08",
+    "title": "守卫攻击规则与肉山抗性调整",
+    "summary": "侦查与岗哨守卫统一为两次攻击摧毁，肉山获得25%状态抗性；全英雄选择时间缩至25秒，闪烁匕首冷却延长，黑皇杖冷却统一为70秒。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.08&language=english"
+    ]
+  },
+  {
+    "version": "7.09",
+    "title": "信使大幅降价堆野开始给予奖励",
+    "summary": "信使价格从200降至50金，初始金钱降至600；开局赏金符改为全队各获40金，队友清理堆叠野怪时，堆野者获得15%的额外金币奖励。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.09&language=english"
+    ]
+  },
+  {
+    "version": "7.10",
+    "title": "邪影芳灵进队长模式赏金符改动",
+    "summary": "邪影芳灵加入队长模式，赏金符不再提供经验，基础金币提高；知识之书基础经验增至700，速度之靴涨至500金，同时将移速加成提高到50。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.10&language=english"
+    ]
+  },
+  {
+    "version": "7.11",
+    "title": "买活改按身家计算击杀金币重配",
+    "summary": "买活费用改为100加净资产的十三分之一，取消买活后的金币收入惩罚；击杀逆风补偿改按死亡英雄个人身家计算，并调整其财富排名对应的奖励倍率。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.11&language=english"
+    ]
+  },
+  {
+    "version": "7.12",
+    "title": "石鳞剑士进队长模式堆野奖励提升",
+    "summary": "石鳞剑士加入队长模式，堆野额外金币从15%提高到20%；恐鳌之心力量增至45，银月之晶攻速增至130，刷新球回魔提升，并继续调整英雄平衡。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.12&language=english"
+    ]
+  },
+  {
+    "version": "7.13",
+    "title": "属性收益重构力量状态抗性取消",
+    "summary": "取消力量提供的状态抗性，重新分配力量、敏捷与智力的收益，主属性获得额外25%收益；防御符文延长至6秒，近战兵营更耐打，建筑团队赏金下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.13&language=english"
+    ]
+  },
+  {
+    "version": "7.13b",
+    "title": "力量英雄减速属性成长补偿调整",
+    "summary": "力量英雄基础移速降低5点，多数力量英雄护甲降低1点；多数智力英雄基础力量提高2点，黑暗贤者、死亡先知等十名英雄的力量成长提高0.3。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.13b&language=english"
+    ]
+  },
+  {
+    "version": "7.14",
+    "title": "工程师进队长模式触发装备重做",
+    "summary": "工程师加入队长模式，边路首波兵线在相遇前不吸引仇恨；金箍棒触发伤害改为100点魔法伤害，漩涡重做配方并提高闪电伤害，碎颅锤击晕不再穿透闪避。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.14&language=english"
+    ]
+  },
+  {
+    "version": "7.15",
+    "title": "赏金符改为五分钟全队领取金币",
+    "summary": "赏金符改为每5分钟刷新，向全队发放金币并装满魔瓶；堆野奖励提高到25%，反补防御塔不再给双方金币，肉山基础生命与伤害提高，兵线赏金重新调整。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.15&language=english"
+    ]
+  },
+  {
+    "version": "7.16",
+    "title": "赛前平衡下调移速天赋与符赏金",
+    "summary": "为国际邀请赛前的平衡调整铺路，赏金符金币成长从每分钟3降至2，多项移速天赋削弱；近战兵营生命提高到2000，肉山攻击力随时间的成长提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.16&language=english"
+    ]
+  },
+  {
+    "version": "7.17",
+    "title": "风杖移速削减闪避装备重新定价",
+    "summary": "Eul的神圣法杖移速加成从40降至30，闪避护符闪避降至15%并降价，炎阳纹章基础闪避同步降低；银月之晶夜间视野加强，刷新球卷轴降价100金。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.17&language=english"
+    ]
+  },
+  {
+    "version": "7.18",
+    "title": "永恒之盘冷却延长点金手再加快",
+    "summary": "永恒之盘冷却从90延长至115秒，迈达斯之手缩至90秒；回音战刃提高力量与减速时长，漩涡闪电伤害降低，水晶室女技能伤害与自身回魔加强。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.18&language=english"
+    ]
+  },
+  {
+    "version": "7.19",
+    "title": "国际邀请赛前修订英雄技能平衡",
+    "summary": "TI8前的英雄平衡补丁：主宰剑刃风暴伤害提高，帕克沉默时间延长，帕吉肉钩前期冷却增加，幻影长矛手幻象更脆；每日奖励英雄的芒果从两个减为一个。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.19&language=english"
+    ]
+  },
+  {
+    "version": "7.19b",
+    "title": "买活复活惩罚固定前期经验调整",
+    "summary": "买活后的复活时间惩罚改为固定25秒，升到2级所需经验从200增至230，防御符文开局冷却至3分钟；圆盾近战格挡加强，天鹰之戒攻击力降低。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.19b&language=english"
+    ]
+  },
+  {
+    "version": "7.19c",
+    "title": "冥魂吸血光环收窄刃甲冷却增加",
+    "summary": "冥魂大帝吸血光环改为只影响近战单位，刃甲护甲降低且冷却延长至25秒；水晶室女对队友的回魔降低，天涯墨客墨涌不再使目标免疫攻击，也不再沉默和缴械目标。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.19c&language=english"
+    ]
+  },
+  {
+    "version": "7.19d",
+    "title": "卓尔与幻影长矛手核心技能降温",
+    "summary": "卓尔游侠射手天赋的敏捷加成下调，幻影长矛手幻影冲锋前期距离缩短；撼地者基础护甲降低，宙斯弧形闪电耗魔统一为80，天涯墨客墨涌前期伤害减少。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.19d&language=english"
+    ]
+  },
+  {
+    "version": "7.20",
+    "title": "地图反补与传送体系全面重做",
+    "summary": "地图重做，反补者改获金钱而不再获得经验；新增回城卷轴专用栏位，重算属性恢复与分裂伤害，并重做多名英雄技能和装备配方。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.20&language=english",
+      "https://www.dota2.com/720"
+    ]
+  },
+  {
+    "version": "7.20b",
+    "title": "怨灵系带与米波斯拉克降温",
+    "summary": "怨灵系带攻速由8降至7，米波敏捷成长下调；斯拉克永久窃取敏捷改为必须亲自击杀，暗影之舞前期冷却延长，并调整多名英雄。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.20b&language=english"
+    ]
+  },
+  {
+    "version": "7.20c",
+    "title": "基础属性装涨价血精石加强",
+    "summary": "怨灵系带攻速再降，三种基础属性装卷轴由210涨至220金；散华、夜叉和慧光卷轴降价，血精石初始能量与每层恢复提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.20c&language=english"
+    ]
+  },
+  {
+    "version": "7.20d",
+    "title": "多件移速装备改用固定加成",
+    "summary": "多件夜叉系装备的百分比移速改为固定加成，相位鞋恢复主动技能；基础移速不足300的近战英雄加速5点，三种基础属性装卷轴再涨价。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.20d&language=english"
+    ]
+  },
+  {
+    "version": "7.20e",
+    "title": "基础属性装备与动力鞋降温",
+    "summary": "怨灵系带、护腕和空灵挂件的主属性加成由8降至6，价格各降25金；动力鞋攻击力由16降至12，并提高斯温和熊战士的基础移速。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.20e&language=english"
+    ]
+  },
+  {
+    "version": "7.21",
+    "title": "主属性收益与兵线经验重配",
+    "summary": "取消主属性额外25%的收益，主属性成长提高15%，每点力量改为提供20生命；调整兵线赏金与升级经验，主野区远古营地改为大野营地。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.21&language=english"
+    ]
+  },
+  {
+    "version": "7.21b",
+    "title": "反补经验提高迈达斯收入下降",
+    "summary": "被反补方所得经验由25%增至30%，迈达斯之手点金收入由200降至180；力丸基础生命恢复提高，巫妖基础移速降低，并继续调整英雄平衡。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.21b&language=english"
+    ]
+  },
+  {
+    "version": "7.21c",
+    "title": "反补经验再提高点金收益再降",
+    "summary": "被反补方经验由30%增至35%，迈达斯之手点金收入由180降至160；韧鼓卷轴涨至600金，冥界亚龙敏捷成长下调，变体精灵力量成长提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.21c&language=english"
+    ]
+  },
+  {
+    "version": "7.21d",
+    "title": "夜魇拉野调整阿托斯控制降温",
+    "summary": "夜魇大野营地更易拉野，阿托斯之棍冷却延长至18秒且施法距离缩至1100；永恒之盘卷轴降价，卫士胫甲卷轴涨价，并降低玛尔斯力量成长。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.21d&language=english"
+    ]
+  },
+  {
+    "version": "7.22",
+    "title": "全英雄神杖升级与肉山掉落扩展",
+    "summary": "为剩余24名英雄补齐神杖升级，并允许购买2000金卷轴消耗神杖；肉山新增可消耗神杖掉落，玛尔斯与艾欧进入队长模式，同时加强建筑与调整经验。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22&language=english"
+    ]
+  },
+  {
+    "version": "7.22b",
+    "title": "邪影芳灵与神杖幻象集中降温",
+    "summary": "邪影芳灵基础攻击间隔从1.3增至1.5秒，25级攻速天赋下调；天涯墨客神杖幻象更脆、持续更短，狼人神杖狼的金钱与经验赏金减半。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22b&language=english"
+    ]
+  },
+  {
+    "version": "7.22c",
+    "title": "王者之戒加强多名英雄再调整",
+    "summary": "王者之戒攻击力由7增至8，斧王基础移速提高10点，米拉娜增加基础魔法恢复；沙王沙尘暴耗魔提高，暗影萨满基础攻速下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22c&language=english"
+    ]
+  },
+  {
+    "version": "7.22d",
+    "title": "斯温与陈降温修补匠获加强",
+    "summary": "斯温基础攻击力降低，战吼护盾减弱；陈的上帝之手前期治疗减少，修补匠热导飞弹冷却从25秒缩短至18秒，并调整多名英雄天赋。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22d&language=english"
+    ]
+  },
+  {
+    "version": "7.22e",
+    "title": "落空改用伪随机圆盾不再叠加",
+    "summary": "低地攻击与致盲的落空几率改用伪随机判定，圆盾不再叠加触发机会；漩涡连锁闪电伤害降低，冥魂大帝骷髅生命减少，露娜多项天赋加强。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22e&language=english"
+    ]
+  },
+  {
+    "version": "7.22f",
+    "title": "神杖消耗卷轴降价英雄再平衡",
+    "summary": "消耗神杖的卷轴从2000降至1800金；血魔和暗夜魔王基础移速提高，主宰基础敏捷与力量降低，亚巴顿基础攻速和护甲提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22f&language=english"
+    ]
+  },
+  {
+    "version": "7.22g",
+    "title": "野区金钱减少常用护甲装备降温",
+    "summary": "普通野怪金钱赏金减少5%，迈达斯之手卷轴涨价，多个护甲装备削弱，岗哨守卫补货变慢；炼金术士额外金钱叠层收益下调，艾欧减速天赋移至15级。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22g&language=english"
+    ]
+  },
+  {
+    "version": "7.22h",
+    "title": "野区经验与相位护甲双双下调",
+    "summary": "普通野怪经验减少5%，相位鞋、勇气勋章和炎阳纹章继续减护甲；守护指环撤出边路商店，昆卡幽灵船冷却延长，暗夜魔王夜间攻速和天赋下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.22h&language=english"
+    ]
+  },
+  {
+    "version": "7.23",
+    "title": "世外之争带来前哨与中立装备",
+    "summary": "虚无之灵与电炎绝手登场，每位玩家获得独立信使；前哨替代边路商店，中立野怪开始掉落专属装备，英雄等级上限升至30，侦查守卫免费。",
+    "contentSources": ["https://www.dota2.com/outlanders"]
+  },
+  {
+    "version": "7.23a",
+    "title": "中立掉落限量阿哈利姆之书移除",
+    "summary": "中立物品改为每阶固定掉落3件，不再设掉落截止时段，高阶优先判定；阿哈利姆之书移除，维修器具和不朽尸王的头盔升至三阶，海洋之心恢复能力下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.23a&language=english"
+    ]
+  },
+  {
+    "version": "7.23b",
+    "title": "首阶中立装备延后至七分钟掉落",
+    "summary": "一阶中立物品的掉落起点从5分钟延后至7分钟，近战英雄天生格挡暂不作用于玩家单位；碎颅锤与深渊之刃击晕伤害改为物理，卓尔游侠敏捷成长提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.23b&language=english"
+    ]
+  },
+  {
+    "version": "7.23c",
+    "title": "前哨经验下降天生格挡规则再改",
+    "summary": "前哨经验系数从25降至18，多档经验天赋下调；天生格挡改为50%概率格挡16点且不再叠加，敌人靠近死亡野怪时停止掉落中立物品，信使略微加速。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.23c&language=english"
+    ]
+  },
+  {
+    "version": "7.23d",
+    "title": "被动金币取消等级增长前哨再降",
+    "summary": "被动金币不再随英雄等级增长，前哨经验系数再降至15，10分钟知识之书初始库存减为一本；万灵药水与不朽尸王的头盔移除，英雄击杀经验系数降低。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.23d&language=english"
+    ]
+  },
+  {
+    "version": "7.23e",
+    "title": "前哨改十分钟结算经验天赋移除",
+    "summary": "前哨经验改为每10分钟结算一次，全部经验天赋替换为其他效果；移除两座远离肉山的圣坛，剩余圣坛首次启用延后至7分钟，卓尔游侠敏捷加成下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.23e&language=english"
+    ]
+  },
+  {
+    "version": "7.23f",
+    "title": "逆风金币门槛提高帕克小小降温",
+    "summary": "双方经济差不超过1000金时不再计算落后队伍的金币补偿；帕克相位转移攻击天赋移至15级，小小基础攻速与力量成长降低，卓尔游侠数箭齐发后期耗魔提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.23f&language=english"
+    ]
+  },
+  {
+    "version": "7.24",
+    "title": "中立物品专槽上线圣坛全面移除",
+    "summary": "新增中立物品专用槽与泉水储藏处，每名英雄只能装备一件，每阶掉落增至4件；圣坛全部移除，前哨迁入主野区，金币天赋取消，信使不再使用物品或插眼。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.24&language=english"
+    ]
+  },
+  {
+    "version": "7.24b",
+    "title": "净魂消魔与闪电弹射距离下调",
+    "summary": "净魂之刃每次攻击消魔从50降至40，漩涡和雷神之锤闪电弹射距离从900缩至650；黯灭减甲降低但攻击提高，护腕魔抗下调，噬魂鬼攻速与基础伤害减少。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.24b&language=english"
+    ]
+  },
+  {
+    "version": "7.25",
+    "title": "全英雄选择重做远行鞋绑定卷轴",
+    "summary": "全英雄选择改为五轮双方同时隐藏选人，并重做禁用规则；强化符首次刷新延后至4分钟，击杀金币公式简化，回城卷轴涨价，远行鞋改为升级卷轴传送。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.25&language=english"
+    ]
+  },
+  {
+    "version": "7.25a",
+    "title": "米波分身经验削减熊战士降温",
+    "summary": "米波分身获得的经验比例从40%降至30%，力量天赋降低；熊战士移速与怒意狂击伤害下调，暗夜魔王力量成长和攻速天赋降低，赏金猎人偷钱天赋削弱。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.25a&language=english"
+    ]
+  },
+  {
+    "version": "7.25b",
+    "title": "连杀经验回调死灵书耗魔上升",
+    "summary": "终结连杀的经验奖励改按英雄等级缩放，死灵书耗魔从50升至150，恐鳌之戒涨价50金；编织者敏捷成长降低，狼人基础伤害与两项后期天赋下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.25b&language=english"
+    ]
+  },
+  {
+    "version": "7.25c",
+    "title": "重复选人自动禁用恢复装备削弱",
+    "summary": "双方同轮选择同一英雄时改为禁用该英雄并重新选人，选择时间缩至20秒；玩家可攻击自己的守卫，多件恢复装备减弱，洞察烟斗涨价，死灵书力量降低。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.25c&language=english"
+    ]
+  },
+  {
+    "version": "7.26",
+    "title": "属性附加收益取消全图金币收紧",
+    "summary": "力量、智力和敏捷不再分别提供魔抗、技能增强与移速；建筑、兵线、野怪和英雄赏金统一减少10%，连杀金币减半，本次先集中调整全局系统。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.26&language=english"
+    ]
+  },
+  {
+    "version": "7.26a",
+    "title": "鞋类移速回归固定加成连杀再调",
+    "summary": "鞋类装备的百分比移速改为固定数值，基础鞋、动力鞋和奥术鞋均提供45移速，远行鞋为110或130；终结连杀的经验再降，多名移速型英雄同步调整。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.26a&language=english"
+    ]
+  },
+  {
+    "version": "7.26b",
+    "title": "反补金币取消天赋与防御塔重配",
+    "summary": "反补不再给金币，被反补方经验提高至50%，天赋效果普遍削弱约20%；防御塔获得恢复光环，二级及以上塔增加500生命与25攻击，中立物品时段调整。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.26b&language=english"
+    ]
+  },
+  {
+    "version": "7.26c",
+    "title": "英雄天赋重新分配部分效果回调",
+    "summary": "继续修订英雄天赋：斧王的移速与攻速天赋交换等级，祸乱之源将施法距离天赋后移，卓尔游侠的致盲天赋提前；水晶室女技能冷却天赋与敌法师大招天赋加强。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.26c&language=english"
+    ]
+  },
+  {
+    "version": "7.27",
+    "title": "前哨增加夺取门槛选人与装备改制",
+    "summary": "夺取敌方前哨须先摧毁其二级塔，全英雄选择改为两人、两人、一人的三轮；击杀经验与被动金币提高，野区布局调整，支配头盔重做，刃甲新增被动反伤。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.27&language=english"
+    ]
+  },
+  {
+    "version": "7.27a",
+    "title": "支配头盔与金箍棒配方成本上调",
+    "summary": "支配头盔对受控野怪的攻击加成从40降至25，卷轴费用增加250金；金箍棒新增350金卷轴，两件装备的成装成本随之提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.27a&language=english"
+    ]
+  },
+  {
+    "version": "7.27b",
+    "title": "血魔技能重做装备拆分规则调整",
+    "summary": "血魔血怒改为消耗生命换取攻速与技能增强，嗜血改为击杀恢复生命；深渊之刃等四件装备不可拆分，回音战刃可拆分，金箍棒涨价，迈达斯之手卷轴降价。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.27b&language=english"
+    ]
+  },
+  {
+    "version": "7.27c",
+    "title": "血魔雷泽加强克林克兹能力下调",
+    "summary": "血魔血怒的生命消耗与耗魔降低，击杀野怪恢复提高；雷泽移速与属性成长加强，克林克兹扫射攻速、灼热之箭伤害及死亡契约收益下调，刃甲护甲降至6。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.27c&language=english"
+    ]
+  },
+  {
+    "version": "7.27d",
+    "title": "韧鼓属性削减天堂之戟增加卷轴",
+    "summary": "韧鼓全属性从6降至4，天堂之戟新增400金卷轴，灵魂之戒降价；支配野怪最低生命降至1000并获得护甲，血魔技能增强提高，小小移速降低。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.27d&language=english"
+    ]
+  },
+  {
+    "version": "7.28",
+    "title": "永雾林渊带来魔晶与森海飞霞",
+    "summary": "森海飞霞登场，阿哈利姆魔晶加入商店，英雄可在20分钟后以1400金币取得永久技能升级；闪烁匕首新增三种升级路线，并加入一批新装备。",
+    "contentSources": ["https://www.dota2.com/mistwoods"]
+  },
+  {
+    "version": "7.28a",
+    "title": "魔晶升级再调修补匠力丸加强",
+    "summary": "修补匠魔晶技能防御矩阵提高护盾与持续时间，力丸催眠飞镖冷却由20缩至15秒；主宰剑刃风暴的魔晶攻击伤害降至75%，宙斯静电场伤害下调。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.28a&language=english"
+    ]
+  },
+  {
+    "version": "7.28b",
+    "title": "腐蚀之珠涨价迅疾闪光获加强",
+    "summary": "腐蚀之珠增加100金币配方，猎鹰战刃提高生命与回魔；迅疾闪光提升攻击、攻速和移速加成，殁境神蚀者基础护甲与移速也获加强。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.28b&language=english"
+    ]
+  },
+  {
+    "version": "7.28c",
+    "title": "帕克兽王与殁境神蚀者降温",
+    "summary": "帕克的伤害与神杖控制下调，兽王基础攻速及早期野猪移速降低；殁境神蚀者削减移速与护甲，司夜刺客大招不再施加破坏。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.28c&language=english"
+    ]
+  },
+  {
+    "version": "7.29",
+    "title": "破晓辰星登场水符改写河道资源",
+    "summary": "破晓辰星登场，新增2、4分钟双侧刷新的水符，赏金符改为每3分钟刷新；前哨按分钟提供经验，恢复属性加点，死灵书移除，第二次肉山开始掉落魔晶。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.29&language=english",
+      "https://www.dota2.com/dawnbreaker"
+    ]
+  },
+  {
+    "version": "7.29b",
+    "title": "幻影长矛手降温狼人获加强",
+    "summary": "幻影长矛手基础攻击与护甲降低，魔晶不再增加施法距离，伤害与弹射范围同时下调；狼人获得护甲、属性成长及召狼生命加强，昆卡移速提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.29b&language=english"
+    ]
+  },
+  {
+    "version": "7.29c",
+    "title": "水符治疗削减兽王飞斧再降温",
+    "summary": "水符生命恢复由100降至80，炎阳纹章攻速加成由65降至55；岗哨补货加快，兽王神杖不再提供飞斧额外伤害，昆卡与狼人基础移速提高。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.29c&language=english"
+    ]
+  },
+  {
+    "version": "7.29d",
+    "title": "恢复增幅下调并修复寻路异常",
+    "summary": "修复单位被困后无法恢复正常寻路的问题，先锋盾格挡降至近战64、远程32；散华及其升级装备的吸血、生命恢复增幅下调，炎阳纹章攻速效果降至50。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.29d&language=english"
+    ]
+  },
+  {
+    "version": "7.30",
+    "title": "冷却减免改制中立装备迎轮换",
+    "summary": "百分比冷却缩减不再叠加，每阶中立物品掉落增至5件并新增一批装备；水符治疗降至40，第二次肉山不再掉奶酪，统御头盔与白银之锋重做配方。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.30&language=english"
+    ]
+  },
+  {
+    "version": "7.30b",
+    "title": "统御头盔白银之锋成本上调",
+    "summary": "统御头盔总价升至6300金币，白银之锋升至5450金币；兽王召唤物生命天赋与狼人减甲效果削弱，斯拉克突袭耗魔提高，育母蜘蛛敏捷成长加强。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.30b&language=english"
+    ]
+  },
+  {
+    "version": "7.30c",
+    "title": "堆野收益削减破晓辰星进队长模式",
+    "summary": "破晓辰星加入队长模式，堆叠野怪的金币与经验减少15%；回音战刃降低力量和回魔，统御头盔削减属性、护甲与恢复，全能骑士天国恩赐可被驱散。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.30c&language=english"
+    ]
+  },
+  {
+    "version": "7.30d",
+    "title": "盛势闪光改公式小小修补匠降温",
+    "summary": "盛势闪光伤害改为100加150%力量；小小投掷伤害与抓树加成降低，修补匠导弹伤害下调、再装填耗魔提高，冥魂大帝暴击与术士地狱火生命加强。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.30d&language=english"
+    ]
+  },
+  {
+    "version": "7.30e",
+    "title": "小野经验降低马格纳斯控制削弱",
+    "summary": "小型野点经验减少10%，魔瓶存符时限缩至90秒，白银之锋攻击与攻速下调；马格纳斯魔晶控制由眩晕改为减速，冲刺距离缩短，小小抓树建筑伤害降低。",
+    "contentSources": [
+      "https://www.dota2.com/datafeed/patchnotes?version=7.30e&language=english"
+    ]
+  }
+]

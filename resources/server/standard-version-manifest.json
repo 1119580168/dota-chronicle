@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "label": "Dota 2 7.32 build 5397 native All Pick",
+  "clientVersion": 5397,
+  "engineVersion": 9358,
+  "map": "dota",
+  "scope": "Critical files only. Not a complete integrity check of every base-game VPK payload.",
+  "files": [
+    {
+      "path": "game/bin/win64/dota2.exe",
+      "length": 331664,
+      "sha256": "232832edb21fbd620edf2b5f854d34e47b6731f86a46a36a8abc2a0115a94c97"
+    },
+    {
+      "path": "game/bin/win64/engine2.dll",
+      "length": 5684040,
+      "sha256": "7290aee42a3dbc7b917c98095dca7a8670b1fea77db14eb1a8340b050822f79e"
+    },
+    {
+      "path": "game/bin/win64/tier0.dll",
+      "length": 3267984,
+      "sha256": "ecc024839ffef511384aacfe13ff5f1e7905d33daa1f7e18d5791ddd010c3f1e"
+    },
+    {
+      "path": "game/dota/bin/win64/host.dll",
+      "length": 1243024,
+      "sha256": "5c9eb1fb7958d6c774c2104e7f26866a9142fa2b673e892d21c5cb5dd405e79f"
+    },
+    {
+      "path": "game/dota/bin/win64/server.dll",
+      "length": 63119648,
+      "sha256": "03f118da7ba4a6ba37fd13f15160ed3ffdadfeb60176409ea40f93c5faaa21a9"
+    },
+    {
+      "path": "game/dota/bin/win64/client.dll",
+      "length": 67377440,
+      "sha256": "18b87155c2417206a95139ec964ee19c7e911c7ce2a42dd3100e7508375d4a54"
+    },
+    {
+      "path": "game/dota/steam.inf",
+      "length": 219,
+      "sha256": "81f1c7a415583650f76c04162c0baf3378aca671175ef6a5ac390f3530ed8719"
+    },
+    {
+      "path": "game/dota/gameinfo.gi",
+      "length": 7527,
+      "sha256": "a3b411cf9ffdd0aa6aa2799dcead7fc7a7af4a94bd5f7ed0e115f17f918ccbb1"
+    },
+    {
+      "path": "game/dota/gameinfo_branchspecific.gi",
+      "length": 615,
+      "sha256": "9095bb17e4811fb62957f20092493dc27169a8d421a16646fd9ad8a1f19ad26a"
+    },
+    {
+      "path": "game/dota/pak01_dir.vpk",
+      "length": 18240819,
+      "sha256": "1ab1b4304ec6f128b69c080d2cef75610c81c6b3ae7ae0cd407cd9e9fab7db5b"
+    },
+    {
+      "path": "game/core/pak01_dir.vpk",
+      "length": 50800,
+      "sha256": "d9fe8c9b78c48ace18c8379b3bbce33eecaa7791088274cefa77a52ce7458f62"
+    }
+  ]
+}

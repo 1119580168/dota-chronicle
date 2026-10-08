@@ -1,0 +1,25 @@
+{
+  "event": {
+    "id": "wikibox-old",
+    "name": "WikiBox · 2022 快照",
+    "period": "2022 · 历史快照",
+    "map": "dota",
+    "workshopId": "2781880190",
+    "packageSha": "104387b25b7ebe77ef00e9d7456b2ba3a42eddc7b0b7a2696132897f98d63442",
+    "packageUpdatedUtc": "2022-08-27T17:14:05Z",
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2781880190",
+    "description": "2022 年保存的 WikiBox 工具沙盒，作者当时已适配 7.32。此处冻结旧包，项目仍在更新，不计入停更 RPG 名额。工具模式开启作弊；原包会自动请求作者 FiveCloud 登录服务（Steam 身份与昵称），排行榜、反馈和严格断网运行未验证。",
+    "kind": "native",
+    "category": "community",
+    "archiveType": "snapshot",
+    "defaultVersion": "7.32",
+    "requiresCheats": true,
+    "multiplayer": "待跨机验证"
+  },
+  "runtimes": [
+    { "version": "7.27c", "verified": "载图失败 · 已禁用", "launchDisabledReason": "2022 原包的地图资源格式无法由 7.27c 识别，建服失败后返回菜单。请选择 7.32。" },
+    { "version": "7.30e", "verified": "可载图 · 部分工具受限", "validationNotes": "移动、技能学习、逐级升级和训练目标生成已验证。满级按钮缺少 HeroMaxLevel 接口，且存在粒子格式警告；技能施放效果、扩展工具和多人待验证。推荐 7.32。" },
+    { "version": "7.32", "verified": "基础工具与技能通过", "validationNotes": "已自动验证移动、升至 30 级、生成训练目标和施放暗影牧师剧毒之触。换英雄、换技能、娱乐模式、严格断网与跨机多人待验证。" },
+    { "version": "7.37e", "verified": "可载图 · 旧对话框受限", "validationNotes": "已验证升至 30 级、生成训练目标和施放森海飞霞爆栗出击。旧 dialog.js 报 ReferenceError / TypeError，输入对话框与扩展工具不保证可用；严格断网及跨机多人待验证。推荐 7.32。" }
+  ]
+}

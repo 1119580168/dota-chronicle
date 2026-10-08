@@ -1,0 +1,342 @@
+[
+  {
+    "version": "6.73",
+    "title": "白牛与沉默登场五件装备加入",
+    "summary": "裂魂人与沉默术士加入，客户端完成6.73规则对齐。阿托斯、天堂之戟、天鹰之戒、深渊之刃和静谧之鞋登场；信使死亡后改为复活，英雄重生时恢复满魔法。",
+    "contentSources": ["https://store.steampowered.com/news/7155/"]
+  },
+  {
+    "version": "6.74",
+    "title": "暗影恶魔登场共享控制加入",
+    "summary": "暗影恶魔加入英雄池，客户端对齐6.74规则，并开放共享单位控制与禁止帮助设置。合作机器人比赛可以选择难度；物品光环图标也开始显示光环的携带者。",
+    "contentSources": ["https://store.steampowered.com/news/7537/"]
+  },
+  {
+    "version": "6.75b",
+    "title": "猛犸登场六分钟不朽盾落地",
+    "summary": "马格纳斯加入，客户端按6.75b完成规则对齐。不朽盾持续时间缩至六分钟，队长模式两轮禁用数量改为二加三；队伍创建功能也随这次客户端更新开放。",
+    "contentSources": ["https://store.steampowered.com/news/9016/"]
+  },
+  {
+    "version": "6.76b",
+    "title": "半人马登场全图奔袭再改写",
+    "summary": "半人马战行者加入，客户端对齐6.76b规则，其大招奔袭让全队以极高移速冲撞敌人。卓尔游侠的精准光环等机制一并更新，卓尔与沉默暂时退出队长模式。",
+    "contentSources": ["https://store.steampowered.com/news/9209/"]
+  },
+  {
+    "version": "6.77",
+    "title": "贪魔迎霜节与大招规则调整",
+    "summary": "迎霜节被贪魔入侵，客户端同步6.77平衡。半人马的奔袭碰撞改为减速而非眩晕，赏金猎人的追踪术移除减甲；马格纳斯巨角冲撞的距离开始随技能等级成长。",
+    "contentSources": ["https://store.steampowered.com/news/9629/"]
+  },
+  {
+    "version": "6.77c",
+    "title": "射手贴身削弱静谧之鞋重调",
+    "summary": "卓尔游侠附近有敌方英雄时，射手天赋加成完全失效。光法冲击波缩小范围并提高耗蓝，司夜刺客尖刺外壳缩短持续时间；静谧之鞋治疗加强，但冷却和治疗时间延长。",
+    "contentSources": ["https://store.steampowered.com/news/10210/"]
+  },
+  {
+    "version": "6.78",
+    "title": "三轮禁选落地神灵被动重做",
+    "summary": "队长模式禁选改为三轮，买活冷却延长至六分钟。哈斯卡的狂战士之血改为提供攻速与魔抗，冰魂获得神杖冰晶爆轰升级；血精石加入主动自杀功能。",
+    "contentSources": ["https://store.steampowered.com/news/10779/"]
+  },
+  {
+    "version": "6.78b",
+    "title": "六月平衡落地技能细节修订",
+    "summary": "6.78平衡对齐的落地修订：官方同时修正回音击与旋风飞斧的细节参数，调整月神之箭的视觉表现。三轮禁选和冰魂神杖升级属于此前的主版本规则。",
+    "contentSources": ["https://store.steampowered.com/news/10779/"]
+  },
+  {
+    "version": "6.78c",
+    "title": "六月平衡延续与后续版本修订",
+    "summary": "六月平衡更新的后续修订，延续三轮禁选、六分钟买活冷却与冰魂神杖升级等规则，仍处于传统英雄成长与装备体系下的对战阶段。",
+    "contentNote": "当前可核验的Valve正文仅覆盖6.78阶段规则，6.78c独立修订明细的官方原文尚待补齐。",
+    "contentSources": ["https://store.steampowered.com/news/10779/"]
+  },
+  {
+    "version": "6.79",
+    "title": "四分钟昼夜与随机肉山计时",
+    "summary": "昼夜各缩短至四分钟，肉山改为八至十一分钟随机重生。劣势路兵线更靠近防御塔，经验获取范围扩大；买活后暂时无法获取小兵与野怪的不可靠金钱。",
+    "contentSources": ["https://store.steampowered.com/news/11667/"]
+  },
+  {
+    "version": "6.80",
+    "title": "技能征召开放跳刀取消耗蓝",
+    "summary": "芳晓节更新带来凤凰与恐怖利刃，并开放技能征召：玩家从随机英雄的技能池轮流组建技能。跳刀取消耗蓝，卓尔游侠沉默改为带击退的狂风，肉山成长不再止于四十五分钟。",
+    "contentSources": [
+      "https://www.dota2.com/newbloom2014/day2/",
+      "https://www.dota2.com/newbloom2014/day3/"
+    ]
+  },
+  {
+    "version": "6.81",
+    "title": "春季清洁修复与英雄机制打磨",
+    "summary": "春季清洁集中修复技能交互与界面问题，并带来6.81平衡。攻速实时更新机制改进，队长征召扩大英雄池与禁用数量；亚巴顿神杖可替附近队友分担伤害。",
+    "contentSources": ["https://www.dota2.com/springcleaning2014/"]
+  },
+  {
+    "version": "6.81b",
+    "title": "燃油对小兵减半剑圣攻速改善",
+    "summary": "蝙蝠骑士黏性燃油对非英雄的额外伤害减半，剑圣基础攻击间隔缩短至1.4秒。米拉娜月神之箭降低最短眩晕和最低伤害，祈求者急速冷却的触发伤害也重新分配。",
+    "contentSources": ["https://store.steampowered.com/news/13518/"]
+  },
+  {
+    "version": "6.82",
+    "title": "地图重绘赏金符与魂之再临",
+    "summary": "影魔重塑外观，地图改动肉山巢穴和多处通路。赏金符加入，河道两端同时刷符；赤红甲进入普通比赛，血魔与幻影长矛手重做，新的追赶奖励机制改变击杀收益。",
+    "contentSources": ["https://www.dota2.com/rekindlingsoul/"]
+  },
+  {
+    "version": "6.82b",
+    "title": "逆风击杀奖励公式收紧修订",
+    "summary": "针对6.82引入的追赶奖励重新调节，按双方总财产比例计算的击杀金钱设定上限，范围击杀经验系数下调。终结连杀的赏金也降低，减少一次团战造成的经济摆动。",
+    "contentSources": ["https://store.steampowered.com/news/14529/"]
+  },
+  {
+    "version": "6.82c",
+    "title": "买活延长追赶奖励再次收紧",
+    "summary": "买活冷却由六分钟延长至七分钟，范围击杀金钱与经验再次下调。死亡先知的低等级蝠群伤害降低、驱使恶灵冷却延长，幻影长矛手的并列幻象上限也减少。",
+    "contentSources": ["https://store.steampowered.com/news/14675/"]
+  },
+  {
+    "version": "6.83",
+    "title": "凛冬将至赏金与兵营收益改写",
+    "summary": "凛冬将至更新带来冬季战场。开局两枚符均为双倍收益的赏金符，兵营金钱更多分给全队；幻象对建筑伤害降低，最高攻速提升至600，远古花岗岩傀儡获得生命光环。",
+    "contentSources": ["https://www.dota2.com/shiftingsnows/"]
+  },
+  {
+    "version": "6.83b",
+    "title": "复活计时重调剑圣施法收紧",
+    "summary": "复活时间改按等级重新计算，近战与远程兵营的全队赏金提高。剑圣基础护甲降低，无敌斩施法距离缩短；斯拉克突袭伤害下调，时间结界的高等级耗蓝增加。",
+    "contentSources": ["https://store.steampowered.com/news/15462/"]
+  },
+  {
+    "version": "6.84",
+    "title": "新装备扩容炼金赠予神杖登场",
+    "summary": "微光披风、莲花宝珠、玲珑心等装备登场，多个英雄获得新神杖升级。炼金术士可消耗神杖，将效果永久赠予友方英雄；破坏与锁闭等状态规则进一步明确。",
+    "contentSources": ["https://www.dota2.com/684/"]
+  },
+  {
+    "version": "6.84b",
+    "title": "微光魔抗下调肉山护甲加速",
+    "summary": "微光披风激活后的魔抗由66%降至55%，白银之锋卷轴价格提高。肉山护甲成长加快，熊战士激怒的伤害倍率降低，维萨吉的石像鬼被击破所需的攻击次数减少。",
+    "contentSources": ["https://store.steampowered.com/news/16747/"]
+  },
+  {
+    "version": "6.84c",
+    "title": "极速符缩短梅肯冷却再延长",
+    "summary": "极速符持续时间由三十秒缩至二十五秒，梅肯斯姆冷却由四十五秒延长至六十五秒。低等级英雄击杀经验减少，追赶赏金公式再调；矮人直升机的低等级火箭弹幕伤害下调。",
+    "contentSources": ["https://store.steampowered.com/news/16847/"]
+  },
+  {
+    "version": "6.85",
+    "title": "拉席克与风暴之灵强势收紧",
+    "summary": "拉席克基础攻击与闪电风暴伤害降低，风暴之灵球状闪电的启动耗蓝增加。工程师地雷伤害、耗蓝和冷却减半，敌人可拆雷获钱；客户端同时改善首页与英雄选择网格。",
+    "contentSources": [
+      "https://www.dota2.com/685/",
+      "https://store.steampowered.com/news/18555/"
+    ]
+  },
+  {
+    "version": "6.85b",
+    "title": "末日焦土与育母蜘蛛减速削弱",
+    "summary": "末日神杖升级不再增加伤害，焦土高等级的治疗与伤害下调，冷却统一为五十五秒。育母蜘蛛的小蜘蛛毒刺减速由12%降至8%，限制追击与黏人能力。",
+    "contentSources": ["https://store.steampowered.com/news/19114/"]
+  },
+  {
+    "version": "6.86",
+    "title": "天穹守望者奥术符与新装备",
+    "summary": "天穹守望者加入，奥术符降低技能冷却与耗蓝。魔龙枪、以太之镜、寒铁钢爪和仙灵之火登场，地图增添野点与通路；死亡先知、虚空假面、力丸等英雄获得新技能。",
+    "contentSources": ["https://www.dota2.com/balanceofpower/"]
+  },
+  {
+    "version": "6.86b",
+    "title": "重做英雄回归队长奥术符下调",
+    "summary": "末日、虚空假面、死亡先知、德鲁伊和寒冬飞龙重新进入队长模式。奥术符耗蓝减免降至40%；力丸绝杀秘技改为只攻击英雄，同时扩大范围并统一冷却时间。",
+    "contentSources": ["https://store.steampowered.com/news/19780/"]
+  },
+  {
+    "version": "6.86c",
+    "title": "祈求者灵动削弱力丸大招加速",
+    "summary": "祈求者的低等级灵动迅捷加成下调，基础力量降低。力丸绝杀秘技冷却缩至四十秒，虚空假面时间漫游距离增加；死亡先知恶灵持续时间延长，吸魂巫术伤害重调。",
+    "contentSources": ["https://store.steampowered.com/news/19848/"]
+  },
+  {
+    "version": "6.86d",
+    "title": "以太之镜配方重做移除魔抗",
+    "summary": "以太之镜合成中的抗魔斗篷改为卷轴，成品不再提供魔抗。陈的神杖升级不再缩短上帝之手冷却；祈求者基础敏捷降低，超震声波耗蓝提高至三百。",
+    "contentSources": ["https://store.steampowered.com/news/20066/"]
+  },
+  {
+    "version": "6.86e",
+    "title": "德鲁伊咆哮与巨石残岩收紧",
+    "summary": "德鲁伊野蛮咆哮的冷却延长，一级由二十八秒增加到三十八秒。大地之灵神杖技能巨石残岩的施法距离由六百骤降至一百二十五，限制远距离将英雄变成巨石。",
+    "contentSources": ["https://store.steampowered.com/news/20311/"]
+  },
+  {
+    "version": "6.86f",
+    "title": "超震声波击退解除硬控效果",
+    "summary": "祈求者超震声波的击退不再属于完全失能，被击退的单位可以使用技能与物品。缴械时间同步重新分配，以保持原先无法攻击的总时长，改变面对这项控制时的反应空间。",
+    "contentSources": ["https://store.steampowered.com/news/20482/"]
+  },
+  {
+    "version": "6.87",
+    "title": "扫描加入智力开始增幅法伤",
+    "summary": "双方获得团队扫描，天梯全英雄选择加入投票禁用。智力开始提升技能伤害，防御塔提供护甲光环；回音战刃、飓风长戟和血棘等装备加入，远程兵经验大幅提高。",
+    "contentSources": ["https://www.dota2.com/687/"]
+  },
+  {
+    "version": "6.87b",
+    "title": "巫妖献祭与刃甲冷却延长修订",
+    "summary": "巫妖献祭提高魔法转换比例，但各等级冷却明显延长。刃甲冷却由十三秒增至十八秒，赏金猎人低等级忍术减速降低；臂章额外护甲只在完全开启后生效。",
+    "contentSources": ["https://store.steampowered.com/news/21660/"]
+  },
+  {
+    "version": "6.87c",
+    "title": "风灵离开边路商店臂章再削弱",
+    "summary": "风灵之纹涨价并从边路商店移除，白银之锋新增卷轴成本，臂章额外护甲降低。兽王野猪减速不再穿透技能免疫；炼金术士贪婪不再对幻象生效，击杀赏金系数也下调。",
+    "contentSources": ["https://store.steampowered.com/news/21776/"]
+  },
+  {
+    "version": "6.87d",
+    "title": "末日冷却与臂章生命消耗提高",
+    "summary": "末日大招冷却延长至一百四十秒，臂章每秒生命消耗提高。凤凰烈日炙烤冷却延长，兽王野猪伤害与召唤耗蓝重调；赏金猎人追踪术的低等级个人赏金减少。",
+    "contentSources": ["https://store.steampowered.com/news/21988/"]
+  },
+  {
+    "version": "6.88",
+    "title": "黑洞改为纯伤英雄平衡再展开",
+    "summary": "谜团黑洞改为纯粹伤害并穿透技能免疫。天穹守望者乱流冷却缩短，风暴双雄持续时间延长；一批英雄与装备获得数值调整，死亡先知吸魂巫术的基础伤害继续下调。",
+    "contentSources": ["https://store.steampowered.com/news/22385/"]
+  },
+  {
+    "version": "6.88b",
+    "title": "野怪反补经验补回伐木机收紧",
+    "summary": "兵线小兵被中立野怪击杀时，附近敌人不再获得零经验，而是获得20%。伐木机力量成长降低，死亡先知基础力量与吸魂巫术削弱，恐怖利刃魔化耗蓝翻倍。",
+    "contentSources": ["https://store.steampowered.com/news/22824/"]
+  },
+  {
+    "version": "6.88c",
+    "title": "神杖群星副星移除反补经验再调",
+    "summary": "米拉娜神杖触发的群星风暴不再落下第二颗流星，伐木机活性护甲叠加上限下调。野怪反补兵线时敌方所得经验提高至35%；虚空假面时间结界冷却延长。",
+    "contentSources": ["https://store.steampowered.com/news/23584/"]
+  },
+  {
+    "version": "6.88d",
+    "title": "分身死亡赏金加入虚空攻击下调",
+    "summary": "天穹守望者风暴双雄被击杀时开始提供一百四十金钱与经验，低等级乱流减速降低。虚空假面基础攻击减少四点，暗影恶魔崩裂禁锢的冷却各等级延长两秒。",
+    "contentSources": ["https://store.steampowered.com/news/23972/"]
+  },
+  {
+    "version": "6.88e",
+    "title": "时间膨胀规则重调幻象拆塔削弱",
+    "summary": "时间膨胀只影响施法时已在冷却的技能，随后使用的技能不再被追加入效果。幻象对建筑的伤害惩罚加重，魔龙枪力量降低；风暴双雄死亡赏金提高至一百六十。",
+    "contentSources": ["https://store.steampowered.com/news/24629/"]
+  },
+  {
+    "version": "6.88f",
+    "title": "洪流冷却分级涤罪之焰耗蓝提高",
+    "summary": "昆卡洪流冷却开始随等级下降，低等级更难频繁施放，幽灵船朗姆酒的伤害缓冲下调。神谕者涤罪之焰耗蓝提高；蝙蝠骑士烈焰破击的击退不再打断持续施法。",
+    "contentSources": ["https://store.steampowered.com/news/24930/"]
+  },
+  {
+    "version": "7.00",
+    "title": "新的旅程天赋背包与大圣登场",
+    "summary": "齐天大圣加入，英雄天赋树取代部分属性加点，三格背包与圣坛登场。肉山移至上河道，地图与野区全面改动；界面和赛前选人流程重做，进入新的旅程。",
+    "contentSources": [
+      "https://www.dota2.com/700/",
+      "https://www.dota2.com/700/gameplay/"
+    ]
+  },
+  {
+    "version": "7.01",
+    "title": "成长经验再分配大圣吸血修正",
+    "summary": "升级经验重新分配，中前期部分等级需求增加，升到二十五级的总量不变。修正齐天大圣如意棒法吸血计算忽略护甲的问题并缩短计数持续时间，瘟疫法师进入队长模式。",
+    "contentSources": ["https://store.steampowered.com/news/26467/"]
+  },
+  {
+    "version": "7.02",
+    "title": "圣坛拆除条件重设真眼可单买",
+    "summary": "圣坛改为己方任意三级防御塔失守后可被摧毁，取代此前二塔全倒的条件。岗哨守卫改为单支购买，狼人进入队长模式；插侦查守卫时可以预览地形与树林形成的实际视野。",
+    "contentSources": ["https://store.steampowered.com/news/27381/"]
+  },
+  {
+    "version": "7.03",
+    "title": "剑心之遗队长界面与双头龙焕新",
+    "summary": "剑心之遗更新重做杰奇洛模型与队长模式界面，队友可建议禁选并移交队长。齐天大圣进入队长模式，防御塔获得按附近敌人数增加的护甲，击杀与被动金钱收益下调。",
+    "contentSources": ["https://www.dota2.com/bladeformlegacy/"]
+  },
+  {
+    "version": "7.04",
+    "title": "长戟白银涨价半人马神杖削弱",
+    "summary": "飓风长戟与白银之锋的卷轴涨价，幽魂权杖和天堂之戟冷却缩短。半人马神杖奔袭减伤降至40%；齐天大圣蓄力乾坤之跃时，附近敌人能够听见其声音。",
+    "contentSources": ["https://store.steampowered.com/news/28351/"]
+  },
+  {
+    "version": "7.05",
+    "title": "防御塔护甲重调点金收益改写",
+    "summary": "防御塔基础护甲降低，但附近每名敌人提供的护甲增加。迈达斯之手减少经验、提高金钱收益；静谧之鞋配方改用风灵之纹并移除护甲，树精卫士进入队长模式。",
+    "contentSources": ["https://store.steampowered.com/news/28756/"]
+  },
+  {
+    "version": "7.06",
+    "title": "反补获取经验野怪每分钟刷新",
+    "summary": "反补开始给反补方提供经验，被反补方也获得更高比例经验。野怪恢复每分钟刷新，中路前十五分钟多一只近战兵；圣坛五分钟后才可使用，所有缩短复活时间的天赋被替换。",
+    "contentSources": ["https://www.dota2.com/706/"]
+  },
+  {
+    "version": "7.06b",
+    "title": "斯温神力收紧育母蛛网恢复提高",
+    "summary": "斯温神之力量提供的额外力量减少，基础攻击间隔由1.7延长至1.8秒。巨魔战将敏捷成长降低，育母蜘蛛蛛网回血提高；齐天大圣猴子猴孙的攻击间隔略微缩短。",
+    "contentSources": ["https://store.steampowered.com/news/29576/"]
+  },
+  {
+    "version": "7.06c",
+    "title": "刃甲取消法伤增幅炎阳命中重调",
+    "summary": "刃甲反弹伤害不再受到技能伤害增幅。炎阳纹章闪避下调，对敌人的命中加成上调并统一命名为精准；冰魂寒霜之足的低等级眩晕加强，齐天大圣树上机动有所改善。",
+    "contentSources": ["https://store.steampowered.com/news/29717/"]
+  },
+  {
+    "version": "7.06d",
+    "title": "死灵书续时大圣技能数值提高",
+    "summary": "死灵书召唤物持续时间增加，支配头盔控制单位的最低生命提高，回音战刃减速延长。钢背兽力量成长与战意伤害下调；齐天大圣棒击大地和乾坤之跃的伤害加强。",
+    "contentSources": ["https://store.steampowered.com/news/30017/"]
+  },
+  {
+    "version": "7.06e",
+    "title": "小野点赏金提高炼金贪婪加强",
+    "summary": "小型野点金钱奖励提高10%，纷争面纱卷轴涨价。炼金术士基础敏捷提高，贪婪对赏金符的倍率增加；莉娜龙破斩低等级伤害下调，齐天大圣猴子猴孙攻击更频繁。",
+    "contentSources": ["https://store.steampowered.com/news/30458/"]
+  },
+  {
+    "version": "7.06f",
+    "title": "连环霜冻去微晕暗夜持续缩短",
+    "summary": "巫妖连环霜冻移除短暂眩晕，暗夜魔王黑暗时间缩至四十秒，瘟疫法师死神镰刀冷却统一为一百秒。疯狂面具护甲惩罚加重，原力法杖施法距离也缩短。",
+    "contentSources": ["https://store.steampowered.com/news/31846/"]
+  },
+  {
+    "version": "7.07",
+    "title": "血战之命双英雄与加速模式登场",
+    "summary": "石鳞剑士与邪影芳灵加入，快速积累金钱经验的加速模式开放。全部英雄天赋树重做，属性和回复规则调整；新天梯赛季采用段位奖章，首个赛季另于两周后开始。",
+    "contentSources": ["https://www.dota2.com/duelingfates/"]
+  },
+  {
+    "version": "7.07b",
+    "title": "芳灵低级大招冷却增加陨星重调",
+    "summary": "邪影芳灵作祟的低等级冷却与伤害下调，诅咒王冠施法距离缩短。陨星锤减少持续伤害并加入落地伤害，偷塔保护减伤提高；敌法师闪烁幻象天赋移至更高等级。",
+    "contentSources": ["https://store.steampowered.com/news/34339/"]
+  },
+  {
+    "version": "7.07c",
+    "title": "赏金符经验重调小小抓树再改",
+    "summary": "赏金符基础经验减半、随时间的成长提高，部分中期等级复活时间延长。小小长大开始提供护甲但移除移速，抓树攻击次数统一为五次；变体精灵变回本体的生命规则调整。",
+    "contentSources": ["https://store.steampowered.com/news/34739/"]
+  },
+  {
+    "version": "7.07d",
+    "title": "变体眩晕期间限制转属性启动",
+    "summary": "变体精灵受眩晕时不能新开启属性转换，已开启的转换仍会继续。远古野怪赏金与奥术符耗蓝减免降低，陨星锤引导缩至2.5秒；技能征召新增残焰、灵能陷阱与锯齿飞轮。",
+    "contentSources": ["https://store.steampowered.com/news/35745/"]
+  }
+]

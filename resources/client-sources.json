@@ -1,0 +1,326 @@
+{
+  "schema": 1,
+  "reviewDate": "2026-10-05",
+  "entries": [
+    {
+      "historyId": "patch-6.78c",
+      "version": "6.78c",
+      "label": "上传者 MediaFire 原目录",
+      "sourceUrl": "https://www.mediafire.com/file/zmmuk4q876lv1ku/dota_6.78c.zip/file",
+      "publisherUrl": "https://tl.net/forum/dota-2-general/555763-old-dota-download",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "已核对公开目录中的 dota 6.78c.zip 整包（4,621,903,168 字节）；未下载或验证本机玩法。"
+    },
+    {
+      "historyId": "patch-6.84c",
+      "version": "6.84c",
+      "label": "Dota 2 Classic · Source 1",
+      "sourceUrl": "https://dota2classic.com/Download",
+      "publisherUrl": "https://www.dota2classic.com/",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "维护者提供 6.84 系列 Source 1 整包并运行 6.84c 服务器；具体整包构建须下载后核验。"
+    },
+    {
+      "historyId": "patch-7.00",
+      "version": "7.00",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+PSWoVNJygsU3ZTZi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "已取得三卷完整包；全包 CRC 通过，实际构建为 2016-12-12 / build 1810，本机普通比赛基础试玩通过。其他构建与完整结算另行验证。"
+    },
+    {
+      "historyId": "patch-7.04",
+      "version": "7.04",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+LjJBcchnkJkyOGQy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.05",
+      "version": "7.05",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+Rp3jiC9Vc_tjZGVi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.06",
+      "version": "7.06",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+6QYqvdfA2ahjMGM6",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.07",
+      "version": "7.07",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+wPEO-nQkTZA5OTdi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.10",
+      "version": "7.10",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+mCc3z9FS7ic3ZmVi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.11",
+      "version": "7.11",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+RAKZ8qvuZyFlYWEy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.16",
+      "version": "7.16",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+SwdGA_t8ad85MGYy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.17",
+      "version": "7.17",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+CvJWPngnS9M1MzEy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.19d",
+      "version": "7.19d",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+_yKNG1pJ6_o2MTdi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.20c",
+      "version": "7.20c",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+FpFQmClbMiY1M2Yy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.21b",
+      "version": "7.21b",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+ur1LysaQuN84NzA6",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.22",
+      "version": "7.22",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+eWx_WsVmpnQ4NzU6",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.23b",
+      "version": "7.23b",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+pM0NJWe7L8Q1ODE6",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.23f",
+      "version": "7.23f",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+VA046kdSgO9lMTY6",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.24b",
+      "version": "7.24b",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+tumn09M9F7NlY2Fi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.25",
+      "version": "7.25",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+vEr8zubDrx43MjZi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.27",
+      "version": "7.27",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+Dru2c7e5zs40ODQy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.28",
+      "version": "7.28",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+cSZaY2tkt0BmM2My",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.28a",
+      "version": "7.28a",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+kO3d68Y9WUM2MWMy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.28b",
+      "version": "7.28b",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+5B2GBGC5pP83OGQy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.29c",
+      "version": "7.29c",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+dt-DOHrCqj1jMDRi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.29d",
+      "version": "7.29d",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+FdqvtZdMNm1jOTBi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.30e",
+      "version": "7.30e",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+Er3_28On3vFkY2My",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.31",
+      "version": "7.31",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+1rx7jFVU98NhNTMy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.31d",
+      "version": "7.31d",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+AGHhQ8LG0-RkYWQy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.32d",
+      "version": "7.32d",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+Arw9aK1bOwszYTky",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.33",
+      "version": "7.33",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+GOa4vo5uJ1VlZmFi",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.34b",
+      "version": "7.34b",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+9sa_8psteQI5YjEy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    },
+    {
+      "historyId": "patch-7.34d",
+      "version": "7.34d",
+      "label": "Dota Hub 下载频道",
+      "sourceUrl": "https://t.me/+HRBMP9_AmyM3OWYy",
+      "publisherUrl": "https://t.me/s/dota_patches",
+      "checkedOn": "2026-10-05",
+      "kind": "download-entry",
+      "note": "发布者列出的完整客户端下载入口；通常需登录 Telegram。包完整性与玩法兼容性未在本机验证。"
+    }
+  ]
+}
