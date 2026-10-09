@@ -65,7 +65,9 @@ test("Wrong build is rejected before any launch or mutation", async (t) => {
   );
 });
 test("Menu-only archives validate their build and never expose matches or hosting", async (t) => {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), "chronicle-menu-"));
+  const root = await fs.realpath(
+    await fs.mkdtemp(path.join(os.tmpdir(), "chronicle-menu-")),
+  );
   t.after(() => fs.rm(root, { recursive: true, force: true }));
   await fs.mkdir(path.join(root, "dota"));
   await fs.writeFile(path.join(root, "dota.exe"), "menu fixture");

@@ -15,7 +15,9 @@ const history = require("../resources/history.json");
 const sources = require("../resources/client-sources.json");
 
 async function fixture(t) {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), "chronicle-archives-"));
+  const root = await fs.realpath(
+    await fs.mkdtemp(path.join(os.tmpdir(), "chronicle-archives-")),
+  );
   t.after(() => fs.rm(root, { recursive: true, force: true }));
   await fs.mkdir(path.join(root, "client"));
   for (const name of ["one.zip", "two.z01"])

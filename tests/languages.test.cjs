@@ -25,7 +25,9 @@ function tree(directory = "resource/localization", final = true) {
   ]);
 }
 async function fixture(t) {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), "chronicle-language-"));
+  const root = await fs.realpath(
+    await fs.mkdtemp(path.join(os.tmpdir(), "chronicle-language-")),
+  );
   t.after(() => fs.rm(root, { recursive: true, force: true }));
   await fs.mkdir(path.join(root, "dota/resource"), { recursive: true });
   return root;
