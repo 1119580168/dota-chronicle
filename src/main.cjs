@@ -20,7 +20,12 @@ const { Library, networks } = require("./backend/library.cjs");
 const { MediaLibrary } = require("./backend/media.cjs");
 const { hydrateHistory, orderClients } = require("./backend/history.cjs");
 const { archiveFolder } = require("./backend/archives.cjs");
-const { dataDirectory, prepareStorage } = require("./backend/storage.cjs");
+const {
+  dataDirectory,
+  prepareStorage,
+  exportBindings,
+} = require("./backend/storage.cjs");
+const recovery = require("./backend/session-recovery.cjs");
 const { roomOptions, serverAddress, inspect } = require("./backend/plans.cjs");
 const { assertSkillEditorMode } = require("./backend/event-catalog.cjs");
 const { assertRuntimeCapacity, loadPolicy } = require("./backend/capacity.cjs");
@@ -53,19 +58,26 @@ let win,
   media,
   history,
   data,
-  busy = false;
+  busy = false,
+  owner;
+async function currentOwner() {
+  return (owner ||= await recovery.ownership(data, w));
+}
 function diskResource(rel) {
   const root = app.getAppPath();
   return path.join(root.endsWith(".asar") ? root + ".unpacked" : root, rel);
 }
 async function sessions() {
   const base = path.join(data, "sessions");
+  await f.noLinks(base);
   await fs.mkdir(base, { recursive: true });
   const rows = [];
   for (const d of await fs.readdir(base, { withFileTypes: true }))
     if (d.isDirectory() && /^[a-f0-9-]{36}$/.test(d.name))
       try {
-        rows.push(await f.readJson(path.join(base, d.name, "state.json")));
+        await f.noLinks(path.join(base, d.name, "state.json"));
+        const state = await f.readJson(path.join(base, d.name, "state.json"));
+        if (state?.id === d.name) rows.push(state);
       } catch {}
   return rows.sort((a, b) => b.createdUtc.localeCompare(a.createdUtc));
 }
@@ -88,10 +100,13 @@ async function guardian(folder, recover = false) {
   child.on("error", async (error) => {
     try {
       const pending = await f.readJson(path.join(folder, "state.json"));
-      if (pending.stage === "queued")
+      if (
+        pending.stage === "queued" ||
+        (recover && pending.stage === "restoring")
+      )
         await f.writeJson(path.join(folder, "state.json"), {
           ...pending,
-          stage: "failed",
+          stage: recover ? "recovery-required" : "failed",
           error: "无法创建启动守护进程：" + error.message,
           finishedUtc: new Date().toISOString(),
         });
@@ -100,10 +115,13 @@ async function guardian(folder, recover = false) {
   child.on("exit", async (code) => {
     try {
       const pending = await f.readJson(path.join(folder, "state.json"));
-      if (pending.stage === "queued")
+      if (
+        pending.stage === "queued" ||
+        (recover && pending.stage === "restoring")
+      )
         await f.writeJson(path.join(folder, "state.json"), {
           ...pending,
-          stage: "failed",
+          stage: recover ? "recovery-required" : "failed",
           error: "启动守护进程提前退出（" + code + "），请打开日志检查。",
           finishedUtc: new Date().toISOString(),
         });
@@ -112,26 +130,52 @@ async function guardian(folder, recover = false) {
   child.unref();
   await log.close();
 }
+async function recoverSession(state, peers = []) {
+  const folder = path.join(data, "sessions", state.id);
+  const ownership = await currentOwner().catch(() => null);
+  const decision = recovery.plan(state, folder, ownership);
+  if (!decision.allowed) {
+    const completed = await recovery.acknowledgeRecoveredCopy(
+      state,
+      folder,
+      ownership,
+      w,
+      peers,
+    );
+    await f.writeJson(
+      path.join(folder, "state.json"),
+      completed || recovery.blockedState(state, decision),
+    );
+    return completed ? "completed" : "blocked";
+  }
+  if (
+    state.worker &&
+    w.sameProcess(await w.identity(state.worker.pid), state.worker)
+  )
+    return "running";
+  library.entry(state.entry.id);
+  await f.writeJson(path.join(folder, "state.json"), {
+    ...state,
+    stage: "restoring",
+  });
+  await guardian(folder, true);
+  return "recovering";
+}
 async function recover() {
-  for (const state of await sessions())
-    if (
-      [
-        "queued",
-        "starting",
-        "loading",
-        "running",
-        "stopping",
-        "restoring",
-        "recovery-required",
-      ].includes(state.stage)
-    ) {
-      if (
-        state.worker &&
-        w.sameProcess(await w.identity(state.worker.pid), state.worker)
-      )
-        continue;
-      library.entry(state.entry.id);
-      await guardian(path.join(data, "sessions", state.id), true);
+  const prior = await sessions();
+  for (const state of prior)
+    if (recovery.activeStages.includes(state.stage)) {
+      try {
+        await recoverSession(state, prior);
+      } catch (error) {
+        await f.writeJson(path.join(data, "sessions", state.id, "state.json"), {
+          ...state,
+          stage: "recovery-required",
+          cleanupError: error.message,
+          recoveryGuidance:
+            "保留旧 data 与客户端暂存文件。请检查会话日志后重试恢复，或导出绑定到全新 data 后继续使用。",
+        });
+      }
     }
 }
 function publicSession(s) {
@@ -146,7 +190,8 @@ function publicSession(s) {
     host: s.host,
     room: s.room,
     join: s.join,
-    error: s.error || s.cleanupError || "",
+    error: [s.error, s.cleanupError].filter(Boolean).join("；"),
+    recoveryGuidance: s.recoveryGuidance || "",
     skillEditorPhase: ["skills", "aghanim1-skills"].includes(s.mode)
       ? s.skillEditorPhase || ""
       : undefined,
@@ -186,11 +231,13 @@ async function launch(input, type = "client") {
       entry.id,
       runtime.root,
     );
-    let room = roomOptions(input.room || library.config.room);
-    if (room.bind && !networks().some((n) => n.address === room.bind))
-      throw Error("房主地址不属于当前电脑，请刷新网卡列表");
     const host = input.host === true || type === "dedicated",
       join = mode === "join" ? serverAddress(input.server) : undefined;
+    let room = roomOptions(input.room || library.config.room);
+    if (host && room.bind && !networks().some((n) => n.address === room.bind))
+      throw Error(
+        "房主监听地址已失效。请在本地房间 → 语言与网络设置重新选择监听网卡并保存。",
+      );
     if (!entry.playable && (host || type !== "client" || mode !== "menu"))
       throw Error("此构建仅支持主菜单，不能比赛、开房或连接服务器");
     if (entry.prototype && host) throw Error("原型版只开放已验证的单人入口");
@@ -211,7 +258,11 @@ async function launch(input, type = "client") {
         type === "dedicated" ? s.type === "dedicated" : s.type !== "dedicated",
       )
     )
-      throw Error("已有对应启动任务正在运行，请先结束它");
+      throw Error(
+        active.some((s) => s.stage === "recovery-required")
+          ? "旧会话需要恢复。请在右侧会话中重试恢复、按原位置恢复指引操作，或导出绑定到全新 data。"
+          : "已有对应启动任务正在运行，请先结束它",
+      );
     if (host && active.some((s) => s.host && s.room.port === room.port))
       throw Error("该端口正在被本启动器的房间使用");
     if (type === "dedicated" && (entry.id !== "7.32" || mode !== "bots"))
@@ -220,11 +271,13 @@ async function launch(input, type = "client") {
       const disk = await w.diskSpace(runtime.root);
       assertRuntimeCapacity(disk, await loadPolicy(data));
     }
+    const ownership = await currentOwner();
     const id = crypto.randomUUID(),
       folder = path.join(data, "sessions", id);
     await fs.mkdir(folder, { recursive: true });
     const state = {
       id,
+      ownership,
       entry,
       root: runtime.root,
       mode,
@@ -355,6 +408,8 @@ app
       return true;
     });
     register("importMedia", async (input) => {
+      await media.load();
+      media.assertWritable();
       media.validateTarget(input?.id, input?.kind);
       const bound = (await library.snapshot()).entries.some(
         (e) =>
@@ -453,7 +508,10 @@ app
     );
     register("saveRoom", async (input) => {
       await library.load();
-      library.config.room = roomOptions(input);
+      const room = roomOptions(input);
+      if (room.bind && !networks().some((n) => n.address === room.bind))
+        throw Error("监听网卡已失效，请重新选择本机网卡或全部本机网卡后保存");
+      library.config.room = room;
       await library.save();
       return library.config.room;
     });
@@ -461,6 +519,13 @@ app
       const s = (await sessions()).find((s) => s.id === input?.id);
       if (!s || !["starting", "loading", "running"].includes(s.stage))
         throw Error("没有可结束的本程序会话");
+      const decision = recovery.plan(
+        s,
+        path.join(data, "sessions", s.id),
+        await currentOwner(),
+      );
+      if (!decision.allowed)
+        throw Error(decision.reason + "。" + decision.guidance);
       if (!s.worker || !w.sameProcess(await w.identity(s.worker.pid), s.worker))
         throw Error("守护进程未运行，请重启启动器以恢复会话");
       await fs.writeFile(
@@ -470,18 +535,70 @@ app
       );
       return true;
     });
+    register("recover", async (input) => {
+      if (busy) throw Error("正在处理启动任务，请稍候");
+      busy = true;
+      try {
+        const prior = await sessions();
+        const s = prior.find((s) => s.id === input?.id);
+        if (!s || s.stage !== "recovery-required")
+          throw Error("没有可重试恢复的会话");
+        return await recoverSession(s, prior);
+      } finally {
+        busy = false;
+      }
+    });
+    register("exportBindings", async () => {
+      await library.load();
+      const r = await dialog.showOpenDialog(win, {
+        title: "选择保存全新 data 的父目录（旧会话与租约证据保留原处）",
+        properties: ["openDirectory", "createDirectory"],
+      });
+      if (r.canceled) return null;
+      const result = await exportBindings(data, r.filePaths[0], library.config);
+      const instructions = process.env.CHRONICLE_DATA_DIR
+        ? `退出启动器，将 CHRONICLE_DATA_DIR 指向 ${result}，然后重新打开。旧 data 和原位置租约必须保留供恢复。`
+        : app.isPackaged
+          ? `退出启动器，把当前 ${data} 改名备份保留；将 ${result} 放到 EXE 旁并命名为 data，然后重新打开。旧 data 和原位置租约必须保留供恢复。`
+          : `退出启动器，把当前 ${data} 改名备份保留；将 ${result} 放到同一位置并命名为 Dota Chronicle，然后重新打开。旧 data 和原位置租约必须保留供恢复。`;
+      const details =
+        instructions +
+        "\n导出不会恢复旧客户端或 Steam 注册表租约。复用旧客户端前必须在原位置完成恢复；其他电脑请重新绑定干净客户端、地图与外置媒体，并重新选择监听网卡。";
+      await fs.writeFile(
+        path.join(result, "RECOVERY-INSTRUCTIONS.txt"),
+        details + "\n",
+        { flag: "wx" },
+      );
+      const openError = await shell.openPath(result);
+      await dialog.showMessageBox(win, {
+        type: "info",
+        title: "绑定已导出",
+        message: "全新 data 已准备",
+        detail:
+          details + (openError ? "\n文件夹未能自动打开：" + openError : ""),
+      });
+      return result;
+    });
     register("fillBots", async (input) => {
       const s = (await sessions()).find((s) => s.id === input?.id);
       if (
         !s ||
         s.type !== "dedicated" ||
         s.stage !== "running" ||
+        !s.game ||
         !w.sameProcess(await w.identity(s.game.pid), s.game)
       )
         throw Error("本程序专服尚未就绪");
-      return w.ps(
-        `& ${w.literal(path.join(s.serverResources, "manage-standard-server.ps1"))} -ClientRoot ${w.literal(s.root)} -StateDirectory ${w.literal(path.join(data, "sessions", s.id, "server"))} -Action FillBots`,
-        25000,
+      const decision = recovery.plan(
+        s,
+        path.join(data, "sessions", s.id),
+        await currentOwner(),
+      );
+      if (!decision.allowed) throw Error(decision.reason);
+      return w.fillServerBots(
+        s.root,
+        path.join(data, "sessions", s.id, "server"),
+        s.game,
       );
     });
     register("openFolder", async (input) => {

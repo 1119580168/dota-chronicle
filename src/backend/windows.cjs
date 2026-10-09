@@ -1,6 +1,8 @@
 const { execFile } = require("node:child_process");
 const { promisify } = require("node:util");
 const path = require("node:path");
+const fs = require("node:fs/promises");
+const f = require("./files.cjs");
 const execute = promisify(execFile);
 const psExe = path.join(
   process.env.SystemRoot || "C:\\Windows",
@@ -21,7 +23,7 @@ const psEnv = {
   ].join(";"),
 };
 const literal = (v) => "'" + String(v).replaceAll("'", "''") + "'";
-async function ps(script, timeout = 25000) {
+async function runPs(script, timeout = 25000, ownScript = false) {
   const text =
     "$ErrorActionPreference='Stop'; [Console]::OutputEncoding=[Text.UTF8Encoding]::new($false); " +
     script;
@@ -32,6 +34,7 @@ async function ps(script, timeout = 25000) {
         "-NoLogo",
         "-NoProfile",
         "-NonInteractive",
+        ...(ownScript ? ["-ExecutionPolicy", "Bypass"] : []),
         "-EncodedCommand",
         Buffer.from(text, "utf16le").toString("base64"),
       ],
@@ -48,6 +51,50 @@ async function ps(script, timeout = 25000) {
       .trim()
       .slice(0, 350);
     throw Error("Windows 操作失败：" + first);
+  }
+}
+async function ps(script, timeout = 25000) {
+  return runPs(script, timeout);
+}
+async function fillServerBots(clientRoot, stateDirectory, expected) {
+  const appRoot = path.resolve(__dirname, "../..");
+  const script = path.join(
+    appRoot.endsWith(".asar") ? appRoot + ".unpacked" : appRoot,
+    "resources/server/manage-standard-server.ps1",
+  );
+  if (
+    !expected ||
+    !Number.isInteger(expected.pid) ||
+    expected.pid <= 0 ||
+    typeof expected.exe !== "string" ||
+    !path.isAbsolute(expected.exe) ||
+    expected.exe.includes("\0") ||
+    typeof expected.createdUtc !== "string" ||
+    !Number.isFinite(Date.parse(expected.createdUtc))
+  )
+    throw Error("专服进程身份无效，拒绝补充 Bot");
+  for (const directory of [clientRoot, stateDirectory]) {
+    if (
+      typeof directory !== "string" ||
+      !path.isAbsolute(directory) ||
+      directory.includes("\0")
+    )
+      throw Error("专服管理目录必须使用实际绝对路径");
+    await f.noLinks(directory);
+  }
+  await f.noLinks(script);
+  if (!(await fs.stat(script)).isFile())
+    throw Error("本程序专服管理脚本不可用，请重新完整解压启动器");
+  const command =
+    `$p=Get-CimInstance Win32_Process -Filter "ProcessId=${expected.pid}"; ` +
+    `if(-not $p -or $p.ExecutablePath -ne ${literal(expected.exe)} -or [Math]::Abs(($p.CreationDate.ToUniversalTime()-[DateTime]::Parse(${literal(expected.createdUtc)}).ToUniversalTime()).TotalSeconds) -ge 1.5){throw '专服进程身份已变化，拒绝补充 Bot'}; ` +
+    `& ${literal(script)} -ClientRoot ${literal(clientRoot)} -StateDirectory ${literal(stateDirectory)} -Action FillBots`;
+  try {
+    return await runPs(command, 25000, true);
+  } catch (e) {
+    throw Error(
+      `补充 Bot 失败：${e.message}。请检查专服会话日志及是否仍在选人阶段；若组织策略禁止脚本，请联系管理员。`,
+    );
   }
 }
 async function processes() {
@@ -120,6 +167,7 @@ async function diskSpace(root) {
 }
 module.exports = {
   ps,
+  fillServerBots,
   psExe,
   psEnv,
   literal,

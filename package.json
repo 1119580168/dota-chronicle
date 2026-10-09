@@ -1,7 +1,7 @@
 {
   "name": "dota-chronicle",
   "productName": "Dota Chronicle",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "Offline historical Dota 2 library and local-room launcher",
   "author": "Dota Chronicle contributors",
   "license": "PolyForm-Noncommercial-1.0.0",

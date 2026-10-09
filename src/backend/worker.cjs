@@ -17,12 +17,14 @@ const { needsHostBootstrap, waitAndJoin } = require("./listen-host.cjs");
 const skillEditor = require("./skill-editor.cjs");
 const { assertRuntimeCapacity, loadPolicy } = require("./capacity.cjs");
 const { trustedEntryForSession, catalogFile } = require("./event-catalog.cjs");
+const recovery = require("./session-recovery.cjs");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const folder = path.resolve(process.argv[2]);
 const stateFile = path.join(folder, "state.json");
 let state,
   game,
   ownsClientLock = false,
+  mayUseLeases = false,
   controlPassword;
 const save = () => f.writeJson(stateFile, state);
 const request = path.join(folder, "stop.request");
@@ -462,9 +464,28 @@ async function startServer() {
   await monitorOwned();
 }
 async function run() {
+  await f.noLinks(stateFile);
   state = await f.readJson(stateFile);
   if (!/^[a-f0-9-]{36}$/.test(state.id) || path.basename(folder) !== state.id)
     throw Error("Invalid session folder");
+  // Check machine, Windows user and original data location before consulting
+  // saved process identities or touching any registry/client lifecycle lease.
+  const owner = await recovery.ownership(path.dirname(path.dirname(folder)), w);
+  const decision = recovery.plan(state, folder, owner);
+  if (!decision.allowed) {
+    state = recovery.blockedState(state, decision);
+    throw Error(decision.reason);
+  }
+  if (
+    process.argv.includes("--recover") &&
+    state.worker &&
+    w.sameProcess(await w.identity(state.worker.pid), state.worker)
+  )
+    throw Error("原守护进程仍在运行，请等待它结束或在界面结束本程序会话");
+  mayUseLeases = true;
+  delete state.cleanupError;
+  delete state.recoveryGuidance;
+  delete state.recoveryCode;
   state.worker = await awaitIdentity(process.pid, process.execPath);
   state.stage = "starting";
   await save();
@@ -477,6 +498,9 @@ async function run() {
       await save();
       await monitorOwned();
     }
+    // A prior failed stop remains an active lease until this owned process has
+    // actually exited. Only then can a retry clear the persisted safety flag.
+    state.recoveryRequired = false;
   } else {
     state.entry = trustedEntryForSession(
       await f.readJson(catalogFile()),
@@ -489,14 +513,24 @@ async function run() {
 run()
   .catch(async (e) => {
     if (!state) return;
+    if (!mayUseLeases) {
+      state.stage = "recovery-required";
+      state.cleanupError ||= e.message;
+      state.recoveryGuidance ||=
+        "保留旧 data 与客户端暂存文件。请在原电脑、原 Windows 用户和原数据目录完成恢复，或导出绑定到全新 data；导出不会恢复旧客户端或 Steam 租约。";
+      return;
+    }
     if (e.code !== "LISTEN_HOST_CANCELLED") state.error = e.message;
-    if (
-      state.game &&
-      w.sameProcess(
-        await w.identity(state.game.pid).catch(() => null),
-        state.game,
-      )
-    )
+    let gameIdentity;
+    if (state.game)
+      try {
+        gameIdentity = await w.identity(state.game.pid);
+      } catch (check) {
+        state.error += "；无法确认游戏进程是否已退出：" + check.message;
+        state.recoveryRequired = true;
+        return;
+      }
+    if (state.game && w.sameProcess(gameIdentity, state.game))
       try {
         await w.stopOwned(state.game);
       } catch (stop) {
@@ -507,6 +541,7 @@ run()
   .finally(async () => {
     if (!state) return;
     try {
+      if (!mayUseLeases) throw Error(state.cleanupError);
       if (state.recoveryRequired)
         throw Error("进程仍可能在使用资源，保留租约等待恢复");
       await scrubControlSecret().catch(() => {
@@ -520,12 +555,12 @@ run()
       )
         await fs.unlink(state.serverCfg);
       if (state.lock) {
-        if (
-          state.lock !==
-          path.join(path.dirname(path.dirname(folder)), "client.lock")
-        )
-          throw Error("客户端锁路径异常");
-        await fs.rmdir(state.lock).catch((e) => {
+        const currentLock = path.join(
+          path.dirname(path.dirname(folder)),
+          "client.lock",
+        );
+        await f.noLinks(currentLock);
+        await fs.rmdir(currentLock).catch((e) => {
           if (e.code !== "ENOENT") throw e;
         });
       }
@@ -536,5 +571,5 @@ run()
     }
     state.finishedUtc = new Date().toISOString();
     await save();
-    process.exit(state.error ? 1 : 0);
+    process.exit(state.error || state.stage === "recovery-required" ? 1 : 0);
   });

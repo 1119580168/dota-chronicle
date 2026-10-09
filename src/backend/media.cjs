@@ -10,6 +10,41 @@ const TYPES = {
   ".webm": "video/webm",
 };
 const KINDS = ["cover", "menu", "selection", "gameplay", "video"];
+const assetId = (id) => typeof id === "string" && /^[a-f0-9]{64}$/.test(id);
+const record = (value) =>
+  value && typeof value === "object" && !Array.isArray(value);
+const emptyIndex = () => ({ schema: 1, assets: {}, targets: {} });
+function validateIndex(index, root) {
+  if (
+    !record(index) ||
+    index.schema !== 1 ||
+    !record(index.assets) ||
+    !record(index.targets)
+  )
+    throw Error("媒体索引 schema 1 结构无效");
+  for (const [id, asset] of Object.entries(index.assets)) {
+    if (
+      !assetId(id) ||
+      !record(asset) ||
+      typeof asset.file !== "string" ||
+      !TYPES[path.extname(asset.file)] ||
+      !KINDS.includes(asset.kind)
+    )
+      throw Error("媒体索引素材记录无效");
+    f.inside(root, asset.file);
+  }
+  for (const row of Object.values(index.targets)) {
+    if (
+      !record(row) ||
+      ["cover", "menu", "selection", "gameplay"].some(
+        (kind) => row[kind] != null && !assetId(row[kind]),
+      ) ||
+      (row.videos != null &&
+        (!Array.isArray(row.videos) || !row.videos.every(assetId)))
+    )
+      throw Error("媒体索引档案绑定无效");
+  }
+}
 function rangeFor(header, size) {
   if (!header) return { start: 0, end: size - 1, partial: false };
   const m = /^bytes=(\d*)-(\d*)$/.exec(header);
@@ -32,23 +67,62 @@ class MediaLibrary {
     this.targets = new Set(
       catalog.entries.flatMap((e) => [e.id, ...e.events.map((v) => v.id)]),
     );
-    this.index = { schema: 1, assets: {}, targets: {} };
+    this.index = emptyIndex();
+    this.status = {
+      available: false,
+      canImport: false,
+      error: "媒体库尚未读取",
+    };
   }
   async load() {
-    const config = await f
-      .readJson(path.join(this.data, "media.json"))
-      .catch(() => ({}));
-    this.root = config.root || path.join(this.data, "media");
-    if (!path.isAbsolute(this.root)) throw Error("媒体库必须使用实际绝对路径");
-    await f.noLinks(this.root);
-    const index = await f
-      .readJson(path.join(this.root, "index.json"))
-      .catch(() => null);
-    if (index?.schema === 1 && index.assets && index.targets)
+    let file = path.join(this.data, "media.json"),
+      label = "媒体配置";
+    const readOptional = async (p) => {
+      try {
+        return await f.readJson(p);
+      } catch (e) {
+        if (e.code === "ENOENT") return undefined;
+        throw e;
+      }
+    };
+    try {
+      await f.noLinks(file);
+      const config = await readOptional(file);
+      if (
+        config !== undefined &&
+        (!record(config) ||
+          typeof config.root !== "string" ||
+          !config.root.trim())
+      )
+        throw Error("媒体配置必须指定实际绝对目录 root");
+      const root =
+        config === undefined ? path.join(this.data, "media") : config.root;
+      if (!path.isAbsolute(root)) throw Error("媒体库必须使用实际绝对路径");
+      await f.noLinks(root);
+      file = path.join(root, "index.json");
+      label = "媒体索引";
+      await f.noLinks(file);
+      const saved = await readOptional(file),
+        index = saved === undefined ? emptyIndex() : saved;
+      validateIndex(index, root);
+      this.root = root;
       this.index = index;
+      this.status = { available: true, canImport: true, error: null, file };
+    } catch (e) {
+      this.status = {
+        available: false,
+        canImport: false,
+        file,
+        error: `${label}不可用：${e.message}。请修复该文件或访问权限后重新核对档案；导入已停用，原文件未改写。`,
+      };
+    }
     return this;
   }
+  assertWritable() {
+    if (!this.status.canImport) throw Error(this.status.error);
+  }
   async resolve(id) {
+    this.assertWritable();
     if (!/^[a-f0-9]{64}$/.test(id || "")) throw Error("未知媒体");
     const a = this.index.assets[id];
     if (!a || typeof a.file !== "string" || !TYPES[path.extname(a.file)])
@@ -76,6 +150,8 @@ class MediaLibrary {
     }
   }
   async forTarget(target) {
+    if (!this.status.available)
+      return { cover: null, shots: {}, videos: [], status: { ...this.status } };
     const row = this.index.targets[target] || {},
       shots = {};
     for (const kind of ["menu", "selection", "gameplay"])
@@ -89,9 +165,11 @@ class MediaLibrary {
       cover: (await this.describe(row.cover)) || shots.menu || shots.gameplay,
       shots,
       videos,
+      status: { ...this.status },
     };
   }
   async hydrate(snapshot) {
+    snapshot.mediaStatus = { ...this.status };
     for (const e of snapshot.entries) {
       e.media = e.installed || e.archived ? await this.forTarget(e.id) : null;
       for (const event of e.events)
@@ -104,6 +182,9 @@ class MediaLibrary {
       throw Error("未知档案或素材类型");
   }
   async importFile(target, kind, source, title = "") {
+    // Re-read immediately before importing, including changes since the last snapshot.
+    await this.load();
+    this.assertWritable();
     this.validateTarget(target, kind);
     const ext = path.extname(source).toLowerCase().replace(".jpeg", ".jpg");
     if (!TYPES[ext] || (kind === "video") !== (ext === ".webm"))
@@ -128,18 +209,20 @@ class MediaLibrary {
     await fs.writeFile(dest, raw, { flag: "wx" }).catch((e) => {
       if (e.code !== "EEXIST") throw e;
     });
-    this.index.assets[id] ||= {
+    const nextIndex = structuredClone(this.index);
+    nextIndex.assets[id] ||= {
       file: rel,
       kind,
       title: title || `${target} · ${kind}`,
       source: "手动导入的本地素材",
       importedUtc: new Date().toISOString(),
     };
-    const row = (this.index.targets[target] ||= {});
+    const row = (nextIndex.targets[target] ||= {});
     if (kind === "video")
       row.videos = [...new Set([...(row.videos || []), id])];
     else row[kind] = id;
-    await f.writeJson(path.join(this.root, "index.json"), this.index);
+    await f.writeJson(path.join(this.root, "index.json"), nextIndex);
+    this.index = nextIndex;
     return this.forTarget(target);
   }
   async response(request) {

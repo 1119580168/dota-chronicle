@@ -11,6 +11,8 @@ const allowed = [
   "host",
   "join",
   "stop",
+  "recover",
+  "exportBindings",
   "fillBots",
   "saveRoom",
   "saveLaunchOptions",
